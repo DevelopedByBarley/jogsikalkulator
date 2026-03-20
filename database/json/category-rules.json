@@ -1,0 +1,325 @@
+{
+  "B-none": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": 7500,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 4600
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 30,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 11000,
+      "vehicle_handling_price": 0
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 20900
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 0
+    }
+  },
+  "B-AM": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": 7500,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 4600
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 30,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 11000,
+      "vehicle_handling_price": 0
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    }
+  },
+  "B-A1": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": null,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 4600
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 30,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 11000,
+      "vehicle_handling_price": 0
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    }
+  },
+  "B-A2": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": null,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 4600
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 30,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 11000,
+      "vehicle_handling_price": 0
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    }
+  },
+  "B-A": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": null,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 4600
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 30,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 11000,
+      "vehicle_handling_price": 0
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    }
+  },
+  "AM-none": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": null,
+    "theoritical": {
+      "training_price": 10000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 10,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 7800,
+      "vehicle_handling_price": 7800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 20900
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 0
+    }
+  },
+  "A1-none": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": 7500,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 17,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 20900
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 0
+    }
+  },
+  "A1-AM": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": 7500,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 17,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    }
+  },
+  "A1-B": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": null,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 17,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    }
+  },
+  "A2-none": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": 7500,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 17,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 20900
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 0
+    }
+  },
+  "A2-AM": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": 7500,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 17,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    }
+  },
+    "A2-B": {
+    "medical_price": 0,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 17,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    }
+  },
+  "A2-A1": {
+    "prev_category_from": true,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": 7500,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 17,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    }
+  }
+}
