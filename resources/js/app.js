@@ -1,19 +1,25 @@
 // Kategória konfigurációk betöltése
 let categoryConfigs = {};
 
+// Párosítások, ahol kötelező megadni az évek számát
+const PAIRS_REQUIRING_YEARS = new Set(['A2-A1', 'A-A1', 'A-A2']);
+
 // Betöltjük a JSON konfigurációt az API végpontból
-fetch('/api/categories')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then(configs => {
-        categoryConfigs = configs.data;
-        // console.log('Category configs loaded:', categoryConfigs);
-    })
-    .catch(error => console.error('Error loading category configs:', error));
+function loadCategoryConfigs(onLoaded) {
+    fetch('/api/categories')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(configs => {
+            categoryConfigs = configs.data;
+            console.log('Category configs loaded:', categoryConfigs);
+            if (onLoaded) onLoaded();
+        })
+        .catch(error => console.error('Error loading category configs:', error));
+}
 
 
 // A kalkulációs adatmodell (később a form mezőkből is frissíthető)
@@ -114,24 +120,17 @@ function activatePrevCategories(category) {
 }
 
 // A kategória + előző kategória párosítás szabályai
-function pairCategories(category, prev_category = 'none') {
-    const key = `${category}-${prev_category}`;
+function pairCategories(category, prev_category = 'none', yearsValue = null) {
+    const baseKey = `${category}-${prev_category}`;
+    const key = yearsValue ? `${baseKey}-${yearsValue}` : baseKey;
     const config = categoryConfigs[key];
 
-    console.log(config);
-    
     if (config) {
-
-        
         // Alkalmazzuk a konfigurációt
         data.category = category;
         data.prev_category = prev_category;
-        
-        // Hány éve van meg az előző kategória (ha van)
-        data.prev_category_from = config.prev_category_from;
-        data.prev_category_from_more_than_2_years = config.prev_category_from_more_than_2_years;
-        
-        console.log(data.prev_category_from, data.prev_category_from_more_than_2_years);
+        data.prev_category_from_more_than_2_years = yearsValue;
+
         // Medical
         data.medical_price = config.medical_price;
         
@@ -171,11 +170,13 @@ function showMedicalSection(value) {
     }
 }
 
-function showPrevCategoryFromSection(value) {
-    if (value === true) {
+function showPrevCategoryFromSection(show) {
+    if (show) {
         document.getElementById('prev-category-from').classList.remove('d-none');
     } else {
         document.getElementById('prev-category-from').classList.add('d-none');
+        // Töröljük az évek kiválasztását, hogy ne maradjon régi érték
+        document.querySelectorAll('input[name="prev_category_from_more_than_2_years"]').forEach(r => r.checked = false);
     }
 }
 
@@ -251,15 +252,28 @@ export function initApp() {
             const category = form.querySelector('input[name="category"]:checked')?.value || '';
             activatePrevCategories(category);
             const prevCategory = form.querySelector('input[name="prev_category"]:checked')?.value || 'none';
-            pairCategories(category, prevCategory);
+
+            const baseKey = `${category}-${prevCategory}`;
+            const requiresYears = PAIRS_REQUIRING_YEARS.has(baseKey);
+            showPrevCategoryFromSection(requiresYears);
+
+            const yearsValue = document.querySelector('input[name="prev_category_from_more_than_2_years"]:checked')?.value || null;
+
+            if (requiresYears && !yearsValue) {
+                return; // Várjuk az évek kiválasztását, nem kalkulálunk
+            }
+
+            pairCategories(category, prevCategory, requiresYears ? yearsValue : null);
             showMedicalSection(data.medical_price);
-            showPrevCategoryFromSection(data.prev_category_from);
             calculateOutcome(data);
+            console.log('[calc]', data);
         };
 
         // Alapból csak a "none" engedélyezett
         setPrevCategoryState([]);
         form.addEventListener('change', run);
-        run();
+        // A years rádió a formon kívül van, külön figyeljük
+        document.getElementById('prev-category-from').addEventListener('change', run);
+        loadCategoryConfigs(run);
     });
 }

@@ -22,7 +22,11 @@ export function cookie() {
   const bannerAcceptNecessaryBtn = document.getElementById('banner-cookie-consent-accept-necessary');
   const bannerAcceptAllBtn = document.getElementById('banner-cookie-consent-accept-all');
   const submitCookeConsentModalBtn = document.getElementById('submit-consent-modal');
-  const cookieModal = new bootstrap.Modal(document.getElementById('cookie-modal'));
+  const cookieModalEl = document.getElementById('cookie-modal');
+
+  if (!cookieBannerCon || !cookieModalEl) return;
+
+  const cookieModal = new bootstrap.Modal(cookieModalEl);
 
   submitCookeConsentModalBtn.addEventListener('click', function (e) {
     e.preventDefault();
