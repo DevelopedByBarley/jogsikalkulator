@@ -1,279 +1,259 @@
-// Kategória konfigurációk betöltése
 let categoryConfigs = {};
 
-// Párosítások, ahol kötelező megadni az évek számát
 const PAIRS_REQUIRING_YEARS = new Set(['A2-A1', 'A-A1', 'A-A2']);
 
-// Betöltjük a JSON konfigurációt az API végpontból
-function loadCategoryConfigs(onLoaded) {
-    fetch('/api/categories')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(configs => {
-            categoryConfigs = configs.data;
-            console.log('Category configs loaded:', categoryConfigs);
-            if (onLoaded) onLoaded();
-        })
-        .catch(error => console.error('Error loading category configs:', error));
-}
-
-
-// A kalkulációs adatmodell (később a form mezőkből is frissíthető)
 const data = {
-    category: 'B', // Alapértelmezett kategória
-    activate_prev_categories: [], // Ez határozza meg, hogy mely előző kategóriák legyenek engedélyezve
-    prev_category: '', // Alapértelmezett már meglévő kategória
-
-    prev_category_from: null, // Ha szükséges, hogy hány éve van meg az előző kategória (kevesebb mint 2 év, több mint 2 év)
-    prev_category_from_more_than_2_years: null,
-    /* ------- Orvosi alkalmassági szekció ----------  */
-    medical_price: 7500, // Orvosi alkalmassági vizsgálat ára
-
-    /* ------- Elmélet szekció ----------  */
-
-    theoritical: {
-        training_price: 20000, // Elméleti képzés díja
-        exam_fee: 4600, // Közlekedési alapismeretek vizsgadíj
-    },
-
-    /* ------- Gyakorlati szekció ----------  */
-
+    category: 'B',
+    prev_category: 'none',
+    medical_price: 7500,
+    theoritical: { training_price: 20000, exam_fee: 4600 },
     practical: {
-        training_basic_hours_price: 5000, // Gyakorlati óradíj - alapóra (Ft/tanóra)
-        training_basic_hours: 30, // Kötelező óraszám
-        training_extra_hours_price: 5000, // Gyakorlati óradíj - pótóra (Ft/tanóra)
-        extra_training_hours_amount: 5, // Kötelezőn felüli gyakorlati órák száma (pótórák)
-        practical_exam_fee_price: 11000, // Forgalmi vizsgadíj
-        vehicle_handling_price: 0, // Járműkezelés vizsgadíj
+        training_basic_hours_price: 5000,
+        training_basic_hours: 30,
+        training_extra_hours_price: 5000,
+        extra_training_hours_amount: 5,
+        practical_exam_fee_price: 11000,
+        vehicle_handling_price: 0,
     },
-
-    /* ------- Elsősegély szekció ----------  */
-
-    first_aid: {
-        training_basic_price: 0, // Elsősegély-tanfolyam díja
-        exam_fee: 20900, // Elsősegély vizsga díja
-    },
-
-    /* ------- Egyéb szekció ----------  */
-
-    others: {
-        administration_fee: 0, // Egyéb autósiskolai adminisztrációs költség
-        document_fee: 0, // Okmány elkészítés díja (első jogosítvány)
-    },
-
-    /* ------- Eredmény ----------  */
-
+    first_aid: { training_basic_price: 0, exam_fee: 20900 },
+    others: { administration_fee: 0, document_fee: 0 },
+    age_requirements: null,
     outcome: 0,
 };
 
-function restoreDefaultData() {
-    data.category = 'B';
-    data.prev_category = 'none';
-    data.activate_prev_categories = [];
-
-    data.medical_price = 7500;
-
-    data.theoritical.training_price = 20000;
-    data.theoritical.exam_fee = 4600;
-
-    data.practical.training_basic_hours_price = 5000;
-    data.practical.training_basic_hours = 30;
-    data.practical.training_extra_hours_price = 5000;
-    data.practical.extra_training_hours_amount = 5;
-    data.practical.practical_exam_fee_price = 11000;
-    data.practical.vehicle_handling_price = 0;
-
-    data.first_aid.training_basic_price = 0;
-    data.first_aid.exam_fee = 20900;
-
-    data.others.administration_fee = 0;
-    data.others.document_fee = 0;
-
-    data.outcome = 0;
+function fmtFt(n) {
+    n = parseInt(n) || 0;
+    return n.toLocaleString('hu-HU') + ' Ft';
 }
 
-function activatePrevCategories(category) {
-    switch (category) {
-        case 'AM':
-            data.activate_prev_categories = ['none'];
-            break;
-        case 'A1':
-            data.activate_prev_categories = ['none', 'AM', 'B'];
-            break;
-        case 'A2':
-            data.activate_prev_categories = ['none', 'AM', 'A1', 'B'];
-            break;
-        case 'A':
-            data.activate_prev_categories = ['none', 'AM', 'A1', 'A2'];
-            break;
-        case 'B':
-            data.activate_prev_categories = ['none', 'AM', 'A1', 'A2', 'A'];
-            break;
-        default:
-            data.activate_prev_categories = ['none'];
+function setText(id, value) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+}
+
+function show(id) {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('d-none');
+}
+
+function hide(id) {
+    const el = document.getElementById(id);
+    if (el) el.classList.add('d-none');
+}
+
+function applyConfig(config) {
+    data.medical_price                              = config.medical_price;
+    data.theoritical.training_price                 = config.theoritical.training_price;
+    data.theoritical.exam_fee                       = config.theoritical.exam_fee;
+    data.practical.training_basic_hours_price       = config.practical.training_basic_hours_price;
+    data.practical.training_basic_hours             = config.practical.training_basic_hours;
+    data.practical.training_extra_hours_price       = config.practical.training_extra_hours_price;
+    data.practical.extra_training_hours_amount      = config.practical.extra_training_hours_amount;
+    data.practical.practical_exam_fee_price         = config.practical.practical_exam_fee_price;
+    data.practical.vehicle_handling_price           = config.practical.vehicle_handling_price;
+    data.first_aid.training_basic_price             = config.first_aid.training_basic_price;
+    data.first_aid.exam_fee                         = config.first_aid.exam_fee;
+    data.others.administration_fee                  = config.others.administration_fee;
+    data.others.document_fee                        = config.others.document_fee;
+    data.age_requirements                           = config.age_requirements || null;
+
+    function setSlider(id, value) {
+        const el = document.getElementById(id);
+        if (el) el.value = value;
     }
-    setPrevCategoryState(data.activate_prev_categories);
+    setSlider('theoretical_training_price_slider', config.theoritical.training_price);
+    setSlider('practical_basic_price_slider',       config.practical.training_basic_hours_price);
+    setSlider('practical_extra_price_slider',        config.practical.training_extra_hours_price);
+    setSlider('practical_extra_hours_slider',        config.practical.extra_training_hours_amount);
+    setSlider('first_aid_training_slider',           config.first_aid.training_basic_price);
+    setSlider('admin_fee_slider',                    config.others.administration_fee);
 }
 
-// A kategória + előző kategória párosítás szabályai
-function pairCategories(category, prev_category = 'none', yearsValue = null) {
-    const baseKey = `${category}-${prev_category}`;
-    const key = yearsValue ? `${baseKey}-${yearsValue}` : baseKey;
-    const config = categoryConfigs[key];
+function calculate() {
+    let total = 0;
+    const med = parseInt(data.medical_price);
+    if (!isNaN(med) && med > 0) total += med;
+    total += data.theoritical.training_price + data.theoritical.exam_fee;
+    total += (data.practical.training_basic_hours_price * data.practical.training_basic_hours)
+           + (data.practical.training_extra_hours_price * data.practical.extra_training_hours_amount)
+           + data.practical.practical_exam_fee_price
+           + data.practical.vehicle_handling_price;
+    total += data.first_aid.training_basic_price + data.first_aid.exam_fee;
+    total += data.others.administration_fee + data.others.document_fee;
+    data.outcome = total;
+}
 
-    if (config) {
-        // Alkalmazzuk a konfigurációt
-        data.category = category;
-        data.prev_category = prev_category;
-        data.prev_category_from_more_than_2_years = yearsValue;
-
-        // Medical
-        data.medical_price = config.medical_price;
-        
-        // Theoritical
-        data.theoritical.training_price = config.theoritical.training_price;
-        data.theoritical.exam_fee = config.theoritical.exam_fee;
-        
-        // Practical
-        data.practical.training_basic_hours_price = config.practical.training_basic_hours_price;
-        data.practical.training_basic_hours = config.practical.training_basic_hours;
-        data.practical.training_extra_hours_price = config.practical.training_extra_hours_price;
-        data.practical.extra_training_hours_amount = config.practical.extra_training_hours_amount;
-        data.practical.practical_exam_fee_price = config.practical.practical_exam_fee_price;
-        data.practical.vehicle_handling_price = config.practical.vehicle_handling_price;
-        
-        // First aid
-        data.first_aid.training_basic_price = config.first_aid.training_basic_price;
-        data.first_aid.exam_fee = config.first_aid.exam_fee;
-        
-        // Others
-        data.others.administration_fee = config.others.administration_fee;
-        data.others.document_fee = config.others.document_fee;
-        
-       // console.log(`Set data for ${key}`, data);
+function render() {
+    // Orvosi
+    const med = parseInt(data.medical_price);
+    if (!isNaN(med) && data.medical_price !== null) {
+        show('medical-row');
+        setText('medical_price_display', fmtFt(med));
+        show('result-medical-row');
+        setText('result-medical', fmtFt(med));
     } else {
-        // Ha nincs specifikus konfiguráció, használjuk az alapértelmezettet
-        restoreDefaultData();
-       // console.log(`No specific config for ${key}, using defaults`, data);
+        hide('medical-row');
+        hide('result-medical-row');
     }
-}
 
-function showMedicalSection(value) {
-    if (!isNaN(value) && value !== null) {
-        document.getElementById('medical-row').classList.remove('d-none');
+    // Elmélet
+    setText('theoretical_training_price_display', fmtFt(data.theoritical.training_price));
+    setText('theoretical_exam_fee_display', fmtFt(data.theoritical.exam_fee));
+
+    // Gyakorlat
+    setText('practical_basic_price_display', fmtFt(data.practical.training_basic_hours_price));
+    setText('practical_basic_hours_display', data.practical.training_basic_hours + ' óra');
+    setText('practical_extra_price_display', fmtFt(data.practical.training_extra_hours_price));
+    setText('practical_extra_hours_display', data.practical.extra_training_hours_amount + ' óra');
+    setText('practical_exam_fee_display', fmtFt(data.practical.practical_exam_fee_price));
+
+    if (data.practical.vehicle_handling_price > 0) {
+        show('vehicle-handling-row');
+        setText('vehicle_handling_display', fmtFt(data.practical.vehicle_handling_price));
     } else {
-        document.getElementById('medical-row').classList.add('d-none');
+        hide('vehicle-handling-row');
     }
-}
 
-function showPrevCategoryFromSection(show) {
-    if (show) {
-        document.getElementById('prev-category-from').classList.remove('d-none');
+    // Elsősegély
+    setText('first_aid_training_display', fmtFt(data.first_aid.training_basic_price));
+    setText('first_aid_exam_fee_display', fmtFt(data.first_aid.exam_fee));
+
+    // Egyéb
+    setText('admin_fee_display', fmtFt(data.others.administration_fee));
+    setText('document_fee_display', fmtFt(data.others.document_fee));
+
+    // Eredmény kártya
+    setText('result-title', 'A(z) "' + data.category + '" kategóriás jogosítvány várható költsége');
+    setText('outcome-total', fmtFt(data.outcome));
+
+    const theoreticalTotal = data.theoritical.training_price + data.theoritical.exam_fee;
+    setText('result-theoretical', fmtFt(theoreticalTotal));
+
+    const practicalTotal = (data.practical.training_basic_hours_price * data.practical.training_basic_hours)
+                         + (data.practical.training_extra_hours_price * data.practical.extra_training_hours_amount)
+                         + data.practical.practical_exam_fee_price
+                         + data.practical.vehicle_handling_price;
+    setText('result-practical', fmtFt(practicalTotal));
+
+    const firstAidTotal = data.first_aid.training_basic_price + data.first_aid.exam_fee;
+    setText('result-first-aid', fmtFt(firstAidTotal));
+
+    const othersTotal = data.others.administration_fee + data.others.document_fee;
+    setText('result-others', fmtFt(othersTotal));
+
+    // Korhatárok
+    if (data.age_requirements) {
+        show('age-requirements-section');
+        setText('age-registration', data.age_requirements.registration);
+        setText('age-theoretical', data.age_requirements.theoretical_exam);
+        setText('age-practical', data.age_requirements.practical_exam);
     } else {
-        document.getElementById('prev-category-from').classList.add('d-none');
-        // Töröljük az évek kiválasztását, hogy ne maradjon régi érték
-        document.querySelectorAll('input[name="prev_category_from_more_than_2_years"]').forEach(r => r.checked = false);
+        hide('age-requirements-section');
     }
 }
 
-// Előző kategória rádiók engedélyezése/tiltása
-function setPrevCategoryState(allowedPrevCategories = []) {
-    const inputs = document.querySelectorAll('input[name="prev_category"]');
-    const allowed = new Set(['none', ...allowedPrevCategories]);
-    let hasCheckedAllowed = false;
-
-    inputs.forEach((input) => {
-        if (allowed.has(input.value)) {
+function setPrevCategoryState(allowed) {
+    const allowedSet = new Set(['none', ...allowed]);
+    let hasChecked = false;
+    document.querySelectorAll('input[name="prev_category"]').forEach(input => {
+        if (allowedSet.has(input.value)) {
             input.disabled = false;
-            if (input.checked) {
-                hasCheckedAllowed = true;
-            }
+            if (input.checked) hasChecked = true;
         } else {
             input.disabled = true;
             input.checked = false;
         }
     });
-
-    if (!hasCheckedAllowed) {
-        const noneInput = document.querySelector('input[name="prev_category"][value="none"]');
-        if (noneInput && !noneInput.disabled) {
-            noneInput.checked = true;
-        }
+    if (!hasChecked) {
+        const none = document.querySelector('input[name="prev_category"][value="none"]');
+        if (none) none.checked = true;
     }
 }
 
-// Külső hívható helper: ezek az előző kategóriák legyenek aktívak
-function activate_prev_categories(categories = []) {
-    setPrevCategoryState(categories);
+function activatePrevCategories(category) {
+    const map = {
+        AM: ['none'],
+        A1: ['none', 'AM', 'B'],
+        A2: ['none', 'AM', 'A1', 'B'],
+        A:  ['none', 'AM', 'A1', 'A2'],
+        B:  ['none', 'AM', 'A1', 'A2', 'A'],
+    };
+    setPrevCategoryState(map[category] || ['none']);
 }
 
-// Végösszeg számítás (későbbi bővítés)
-function calculateOutcome(data) {
-    let total = 0;
-
-    // Orvosi alkalmassági vizsgálat
-    if (data.medical_price !== null && data.medical_price !== undefined) {
-        total += data.medical_price;
-    }
-    // Elméleti képzés és vizsgadíj
-    total += data.theoritical.training_price;
-    total += data.theoritical.exam_fee;
-
-    // Gyakorlati képzés és vizsgadíj
-    total += data.practical.training_basic_hours_price * data.practical.training_basic_hours;
-    total += data.practical.training_extra_hours_price * data.practical.extra_training_hours_amount;
-    total += data.practical.practical_exam_fee_price;
-    total += data.practical.vehicle_handling_price;
-
-    // Elsősegély tanfolyam és vizsgadíj
-    total += data.first_aid.training_basic_price;
-    total += data.first_aid.exam_fee;
-
-    // Egyéb költségek
-    total += data.others.administration_fee;
-    total += data.others.document_fee;
-
-    data.outcome = total;
-}
 
 export function initApp() {
-    document.addEventListener('DOMContentLoaded', () => {
-        const form = document.getElementById('category-form');
-        if (!form) {
-            return;
+    const form = document.getElementById('category-form');
+    if (!form) return;
+
+    // Azonnal renderelünk az alapértékekkel (API nélkül is látható)
+    calculate();
+    render();
+
+    // Rádió változás kezelő
+    function onRadioChange() {
+        const category = form.querySelector('input[name="category"]:checked')?.value || 'B';
+        activatePrevCategories(category);
+        const prevCategory = form.querySelector('input[name="prev_category"]:checked')?.value || 'none';
+
+        const baseKey = category + '-' + prevCategory;
+        const requiresYears = PAIRS_REQUIRING_YEARS.has(baseKey);
+
+        if (requiresYears) {
+            show('prev-category-from');
+        } else {
+            hide('prev-category-from');
+            document.querySelectorAll('input[name="prev_category_from_more_than_2_years"]')
+                .forEach(r => r.checked = false);
         }
 
-        // Aktuális választások beolvasása és szabályok futtatása
-        const run = () => {
-            const category = form.querySelector('input[name="category"]:checked')?.value || '';
-            activatePrevCategories(category);
-            const prevCategory = form.querySelector('input[name="prev_category"]:checked')?.value || 'none';
+        const yearsValue = form.querySelector('input[name="prev_category_from_more_than_2_years"]:checked')?.value || null;
+        if (requiresYears && !yearsValue) return;
 
-            const baseKey = `${category}-${prevCategory}`;
-            const requiresYears = PAIRS_REQUIRING_YEARS.has(baseKey);
-            showPrevCategoryFromSection(requiresYears);
+        const key = yearsValue ? baseKey + '-' + yearsValue : baseKey;
+        const config = categoryConfigs[key];
 
-            const yearsValue = document.querySelector('input[name="prev_category_from_more_than_2_years"]:checked')?.value || null;
+        if (config) {
+            data.category = category;
+            data.prev_category = prevCategory;
+            applyConfig(config);
+        }
 
-            if (requiresYears && !yearsValue) {
-                return; // Várjuk az évek kiválasztását, nem kalkulálunk
-            }
+        calculate();
+        render();
+    }
 
-            pairCategories(category, prevCategory, requiresYears ? yearsValue : null);
-            showMedicalSection(data.medical_price);
-            calculateOutcome(data);
-            console.log('[calc]', data);
-        };
-
-        // Alapból csak a "none" engedélyezett
-        setPrevCategoryState([]);
-        form.addEventListener('change', run);
-        // A years rádió a formon kívül van, külön figyeljük
-        document.getElementById('prev-category-from').addEventListener('change', run);
-        loadCategoryConfigs(run);
+    // Rádió gombok figyelése
+    form.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.addEventListener('change', onRadioChange);
     });
+
+    // Slider listenerek – NEM a form change, hanem direktben az inputon
+    function bindSlider(id, setter) {
+        const slider = document.getElementById(id);
+        if (!slider) return;
+        slider.addEventListener('input', function () {
+            setter(parseInt(this.value));
+            calculate();
+            render();
+        });
+    }
+
+    bindSlider('theoretical_training_price_slider', v => data.theoritical.training_price = v);
+    bindSlider('practical_basic_price_slider',       v => data.practical.training_basic_hours_price = v);
+    bindSlider('practical_extra_price_slider',        v => data.practical.training_extra_hours_price = v);
+    bindSlider('practical_extra_hours_slider',        v => data.practical.extra_training_hours_amount = v);
+    bindSlider('first_aid_training_slider',           v => data.first_aid.training_basic_price = v);
+    bindSlider('admin_fee_slider',                    v => data.others.administration_fee = v);
+
+    // API betöltés – ha megvan, újrafuttatjuk a rádió logikát
+    fetch('/api/categories')
+        .then(r => r.json())
+        .then(json => {
+            categoryConfigs = json.data;
+            onRadioChange();
+        })
+        .catch(e => console.error('[app] config load failed', e));
+
+    setPrevCategoryState([]);
 }

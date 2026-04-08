@@ -22,6 +22,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 0
+    },
+    "age_requirements": {
+      "registration": "16 év 6 hónapos kortól",
+      "theoretical_exam": "16 év 9 hónapos kortól",
+      "practical_exam": "17 éves kortól"
     }
   },
   "B-AM": {
@@ -47,6 +52,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "16 év 6 hónapos kortól",
+      "theoretical_exam": "16 év 9 hónapos kortól",
+      "practical_exam": "17 éves kortól"
     }
   },
   "B-A1": {
@@ -72,6 +82,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "16 év 6 hónapos kortól",
+      "theoretical_exam": "16 év 9 hónapos kortól",
+      "practical_exam": "17 éves kortól"
     }
   },
   "B-A2": {
@@ -97,6 +112,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "16 év 6 hónapos kortól",
+      "theoretical_exam": "16 év 9 hónapos kortól",
+      "practical_exam": "17 éves kortól"
     }
   },
   "B-A": {
@@ -122,6 +142,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "16 év 6 hónapos kortól",
+      "theoretical_exam": "16 év 9 hónapos kortól",
+      "practical_exam": "17 éves kortól"
     }
   },
   "AM-none": {
@@ -147,6 +172,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 0
+    },
+    "age_requirements": {
+      "registration": "14 éves kortól",
+      "theoretical_exam": "14 éves kortól",
+      "practical_exam": "14 éves kortól"
     }
   },
   "A1-none": {
@@ -172,6 +202,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 0
+    },
+    "age_requirements": {
+      "registration": "16 éves kortól",
+      "theoretical_exam": "16 éves kortól",
+      "practical_exam": "16 éves kortól"
     }
   },
   "A1-AM": {
@@ -197,6 +232,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "16 éves kortól",
+      "theoretical_exam": "16 éves kortól",
+      "practical_exam": "16 éves kortól"
     }
   },
   "A1-B": {
@@ -222,6 +262,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "16 éves kortól",
+      "theoretical_exam": "16 éves kortól",
+      "practical_exam": "16 éves kortól"
     }
   },
   "A2-none": {
@@ -247,6 +292,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 0
+    },
+    "age_requirements": {
+      "registration": "18 éves kortól",
+      "theoretical_exam": "18 éves kortól",
+      "practical_exam": "18 éves kortól"
     }
   },
   "A2-AM": {
@@ -272,9 +322,16 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "18 éves kortól",
+      "theoretical_exam": "18 éves kortól",
+      "practical_exam": "18 éves kortól"
     }
   },
-    "A2-B": {
+  "A2-B": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
     "medical_price": 0,
     "theoritical": {
       "training_price": 20000,
@@ -295,6 +352,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "18 éves kortól",
+      "theoretical_exam": "18 éves kortól",
+      "practical_exam": "18 éves kortól"
     }
   },
   "A2-A1-less_2": {
@@ -318,6 +380,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "18 éves kortól",
+      "theoretical_exam": "18 éves kortól",
+      "practical_exam": "18 éves kortól"
     }
   },
   "A2-A1-more_2": {
@@ -341,6 +408,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "18 éves kortól",
+      "theoretical_exam": "18 éves kortól",
+      "practical_exam": "18 éves kortól"
     }
   },
   "A-A1-less_2": {
@@ -364,6 +436,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "20 éves kortól",
+      "theoretical_exam": "20 éves kortól",
+      "practical_exam": "20 éves kortól"
     }
   },
   "A-A1-more_2": {
@@ -387,6 +464,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "20 éves kortól",
+      "theoretical_exam": "20 éves kortól",
+      "practical_exam": "20 éves kortól"
     }
   },
   "A-A2-less_2": {
@@ -410,6 +492,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "20 éves kortól",
+      "theoretical_exam": "20 éves kortól",
+      "practical_exam": "20 éves kortól"
     }
   },
   "A-A2-more_2": {
@@ -433,6 +520,11 @@
     "others": {
       "administration_fee": 0,
       "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "20 éves kortól",
+      "theoretical_exam": "20 éves kortól",
+      "practical_exam": "20 éves kortól"
     }
   }
 }

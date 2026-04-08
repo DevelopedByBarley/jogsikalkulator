@@ -267,16 +267,25 @@
 
 
 
-<section>
-    <div class="container mt-10">
-        <!-- Categories section -->
-        <div class="row">
-            <div class="col-12">
-                <form id="category-form" class="space-y-6">
-                    <section>
-                        <div class="mb-6">
-                            <div class="mb-2 fw-bold">Kategória</div>
-                            <div class="btn-group" role="group" aria-label="Kategória">
+<section class="py-5" style="background: #f1f5f9;">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold" style="color: #0f172a;">Jogosítvány költségkalkulátor</h2>
+            <p class="text-secondary">Állítsd be a csúszkákat és azonnal látod a várható költségeket</p>
+        </div>
+
+        <form id="category-form">
+            <div class="row g-4">
+
+                <!-- Bal oldal: beállítások -->
+                <div class="col-lg-7">
+
+                    <!-- Kategória -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header fw-bold bg-white border-bottom">Melyik kategóriát szeretnéd megszerezni?</div>
+                        <div class="card-body">
+                            <div class="btn-group flex-wrap" role="group">
                                 <input type="radio" class="btn-check" name="category" id="cat-am" value="AM">
                                 <label class="btn btn-outline-dark" for="cat-am">AM</label>
 
@@ -289,15 +298,20 @@
                                 <input type="radio" class="btn-check" name="category" id="cat-a" value="A">
                                 <label class="btn btn-outline-dark" for="cat-a">A</label>
 
-                                <input type="radio" class="btn-check" name="category" id="cat-b" value="B"
-                                    checked>
+                                <input type="radio" class="btn-check" name="category" id="cat-b" value="B" checked>
                                 <label class="btn btn-outline-dark" for="cat-b">B</label>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="mb-6">
-                            <div class="mb-2 fw-bold">Előző kategória</div>
-                            <div class="btn-group" role="group" aria-label="Előző kategória">
+                    <!-- Előző kategória -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header fw-bold bg-white border-bottom">Van már meglévő jogosítványod?</div>
+                        <div class="card-body">
+                            <div class="btn-group flex-wrap" role="group">
+                                <input type="radio" class="btn-check" name="prev_category" id="prev-none" value="none" checked>
+                                <label class="btn btn-outline-dark" for="prev-none">Nincs</label>
+
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-am" value="AM">
                                 <label class="btn btn-outline-dark" for="prev-am">AM</label>
 
@@ -312,46 +326,239 @@
 
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-b" value="B">
                                 <label class="btn btn-outline-dark" for="prev-b">B</label>
-
-                                <input type="radio" class="btn-check" name="prev_category" id="prev-none" value="none"
-                                    checked>
-                                <label class="btn btn-outline-dark" for="prev-none">Nincs</label>
                             </div>
                         </div>
-                    </section>
-                </form>
-            </div>
-
-            <div class="col-12 d-none" id="prev-category-from">
-                <div class="card mb-4">
-                    <div class="card-header fw-bold">Hány éve van jogosítványa?</div>
-                    <div class="card-body">
-                        <div class="btn-group" role="group" aria-label="Évek száma">
-                            <input type="radio" class="btn-check" name="prev_category_from_more_than_2_years" id="year-less-2"
-                                value="less_2">
-                            <label class="btn btn-outline-dark" for="year-less-2">Kevesebb mint 2 éve</label>
-
-                            <input type="radio" class="btn-check" name="prev_category_from_more_than_2_years" id="year-more-2"
-                                value="more_2">
-                            <label class="btn btn-outline-dark" for="year-more-2">Több mint 2 éve</label>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Medical section -->
-            <div class="row d-none" id="medical-row">
-                <div class="col-12">
-                    <div class="card mb-4">
-                        <div class="card-header fw-bold">Orvosi alkalmassági vizsgálat</div>
+
+                    <!-- Hány éve van jogsija (feltételes) -->
+                    <div class="card border-0 shadow-sm mb-4 d-none" id="prev-category-from">
+                        <div class="card-header fw-bold bg-white border-bottom">Hány éve van meg a jogosítványod?</div>
                         <div class="card-body">
-                            <p>Ár: <span id="medical_price_display">7500</span> Ft</p>
+                            <div class="btn-group flex-wrap" role="group">
+                                <input type="radio" class="btn-check" name="prev_category_from_more_than_2_years" id="year-less-2" value="less_2">
+                                <label class="btn btn-outline-dark" for="year-less-2">Kevesebb mint 2 éve</label>
+
+                                <input type="radio" class="btn-check" name="prev_category_from_more_than_2_years" id="year-more-2" value="more_2">
+                                <label class="btn btn-outline-dark" for="year-more-2">Több mint 2 éve</label>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Orvosi (feltételes, statikus) -->
+                    <div class="card border-0 shadow-sm mb-4 d-none" id="medical-row">
+                        <div class="card-header fw-bold bg-white border-bottom">Orvosi alkalmassági vizsgálat</div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="text-secondary">Ár (fix)</span>
+                                <span class="fw-bold" id="medical_price_display">7 500 Ft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Elmélet -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header fw-bold bg-white border-bottom">Elméleti képzés</div>
+                        <div class="card-body">
+                            <!-- Képzés díja slider -->
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <label class="form-label mb-0">Elméleti képzés díja</label>
+                                    <span class="fw-bold text-primary" id="theoretical_training_price_display">20 000 Ft</span>
+                                </div>
+                                <input type="range" class="form-range" id="theoretical_training_price_slider"
+                                    min="0" max="90000" step="500" value="20000">
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-secondary">0 Ft</small>
+                                    <small class="text-secondary">90 000 Ft</small>
+                                </div>
+                            </div>
+                            <!-- Vizsgadíj statikus -->
+                            <div class="d-flex justify-content-between pt-2 border-top">
+                                <span class="text-secondary">Közlekedési alapismeretek vizsgadíj (fix)</span>
+                                <span class="fw-bold" id="theoretical_exam_fee_display">4 600 Ft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gyakorlat -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header fw-bold bg-white border-bottom">Gyakorlati képzés</div>
+                        <div class="card-body">
+
+                            <!-- Alapóra díj slider -->
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <label class="form-label mb-0">Gyakorlati óradíj (alapóra)</label>
+                                    <span class="fw-bold text-primary" id="practical_basic_price_display">5 000 Ft</span>
+                                </div>
+                                <input type="range" class="form-range" id="practical_basic_price_slider"
+                                    min="5000" max="15000" step="100" value="5000">
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-secondary">5 000 Ft</small>
+                                    <small class="text-secondary">15 000 Ft</small>
+                                </div>
+                            </div>
+
+                            <!-- Kötelező óraszám statikus -->
+                            <div class="d-flex justify-content-between mb-4 pt-2 border-top">
+                                <span class="text-secondary">Kötelező óraszám (fix)</span>
+                                <span class="fw-bold" id="practical_basic_hours_display">30 óra</span>
+                            </div>
+
+                            <!-- Pótóra díj slider -->
+                            <div class="mb-4 pt-2 border-top">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <label class="form-label mb-0">Gyakorlati óradíj (pótóra)</label>
+                                    <span class="fw-bold text-primary" id="practical_extra_price_display">5 000 Ft</span>
+                                </div>
+                                <input type="range" class="form-range" id="practical_extra_price_slider"
+                                    min="5000" max="15000" step="100" value="5000">
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-secondary">5 000 Ft</small>
+                                    <small class="text-secondary">15 000 Ft</small>
+                                </div>
+                            </div>
+
+                            <!-- Pótórák száma slider -->
+                            <div class="mb-4 pt-2 border-top">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <label class="form-label mb-0">Kötelezőn felüli gyakorlati órák (pótórák)</label>
+                                    <span class="fw-bold text-primary" id="practical_extra_hours_display">5 óra</span>
+                                </div>
+                                <input type="range" class="form-range" id="practical_extra_hours_slider"
+                                    min="0" max="50" step="1" value="5">
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-secondary">0 óra</small>
+                                    <small class="text-secondary">50 óra</small>
+                                </div>
+                            </div>
+
+                            <!-- Forgalmi vizsgadíj statikus -->
+                            <div class="d-flex justify-content-between pt-2 border-top">
+                                <span class="text-secondary">Forgalmi vizsgadíj (fix)</span>
+                                <span class="fw-bold" id="practical_exam_fee_display">11 000 Ft</span>
+                            </div>
+
+                            <!-- Járműkezelés vizsgadíj (feltételes, statikus) -->
+                            <div class="d-flex justify-content-between pt-2 mt-2 border-top d-none" id="vehicle-handling-row">
+                                <span class="text-secondary">Járműkezelés vizsgadíj (fix)</span>
+                                <span class="fw-bold" id="vehicle_handling_display">0 Ft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Elsősegély -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header fw-bold bg-white border-bottom">Elsősegély</div>
+                        <div class="card-body">
+                            <!-- Tanfolyam díja slider -->
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <label class="form-label mb-0">Elsősegély-tanfolyam díja</label>
+                                    <span class="fw-bold text-primary" id="first_aid_training_display">0 Ft</span>
+                                </div>
+                                <input type="range" class="form-range" id="first_aid_training_slider"
+                                    min="0" max="30000" step="100" value="0">
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-secondary">0 Ft</small>
+                                    <small class="text-secondary">30 000 Ft</small>
+                                </div>
+                            </div>
+                            <!-- Vizsga díja statikus -->
+                            <div class="d-flex justify-content-between pt-2 border-top">
+                                <span class="text-secondary">Elsősegély vizsga díja (fix)</span>
+                                <span class="fw-bold" id="first_aid_exam_fee_display">20 900 Ft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Egyéb -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header fw-bold bg-white border-bottom">Egyéb költségek</div>
+                        <div class="card-body">
+                            <!-- Adminisztrációs díj slider -->
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <label class="form-label mb-0">Autósiskolai adminisztrációs költség</label>
+                                    <span class="fw-bold text-primary" id="admin_fee_display">0 Ft</span>
+                                </div>
+                                <input type="range" class="form-range" id="admin_fee_slider"
+                                    min="0" max="60000" step="500" value="0">
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-secondary">0 Ft</small>
+                                    <small class="text-secondary">60 000 Ft</small>
+                                </div>
+                            </div>
+                            <!-- Okmánydíj statikus -->
+                            <div class="d-flex justify-content-between pt-2 border-top">
+                                <span class="text-secondary">Okmány elkészítés díja (fix)</span>
+                                <span class="fw-bold" id="document_fee_display">0 Ft</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- Jobb oldal: eredmény -->
+                <div class="col-lg-5">
+                    <div class="sticky-top" style="top: 20px;">
+
+                        <!-- Eredmény kártya -->
+                        <div class="card border-0 shadow" id="result-card">
+                            <div class="card-header text-white fw-bold py-3" style="background: linear-gradient(135deg, #0f172a, #1e3a5f);">
+                                <span id="result-title">A(z) "B" kategóriás jogosítvány várható költsége</span>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="p-4 text-center border-bottom" style="background: #f8fafc;">
+                                    <div class="text-secondary small mb-1">Teljes becsült költség</div>
+                                    <div class="fw-bold" style="font-size: 2rem; color: #0f172a;" id="outcome-total">— Ft</div>
+                                </div>
+                                <div class="p-3">
+                                    <div class="d-flex justify-content-between py-2 border-bottom d-none" id="result-medical-row">
+                                        <span class="text-secondary">Orvosi alkalmassági</span>
+                                        <span class="fw-semibold" id="result-medical">–</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-2 border-bottom">
+                                        <span class="text-secondary">Elmélet</span>
+                                        <span class="fw-semibold" id="result-theoretical">–</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-2 border-bottom">
+                                        <span class="text-secondary">Gyakorlat</span>
+                                        <span class="fw-semibold" id="result-practical">–</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-2 border-bottom">
+                                        <span class="text-secondary">Elsősegély</span>
+                                        <span class="fw-semibold" id="result-first-aid">–</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between py-2">
+                                        <span class="text-secondary">Egyéb</span>
+                                        <span class="fw-semibold" id="result-others">–</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Korhatárok -->
+                            <div class="card-footer bg-white border-top d-none" id="age-requirements-section">
+                                <div class="small text-secondary mb-2 fw-semibold">Korhatárok</div>
+                                <div class="d-flex justify-content-between small py-1">
+                                    <span class="text-secondary">Jelentkezés</span>
+                                    <span id="age-registration">–</span>
+                                </div>
+                                <div class="d-flex justify-content-between small py-1">
+                                    <span class="text-secondary">Elméleti vizsga</span>
+                                    <span id="age-theoretical">–</span>
+                                </div>
+                                <div class="d-flex justify-content-between small py-1">
+                                    <span class="text-secondary">Forgalmi vizsga</span>
+                                    <span id="age-practical">–</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
+        </form>
 
     </div>
-
-
 </section>
