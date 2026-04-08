@@ -341,6 +341,9 @@
                                 <input type="radio" class="btn-check" name="prev_category_from_more_than_2_years" id="year-more-2" value="more_2">
                                 <label class="btn btn-outline-dark" for="year-more-2">Több mint 2 éve</label>
                             </div>
+                            <div id="years-warning" class="alert alert-warning mt-3 d-none" role="alert">
+                                Kérjük, jelöld ki, hogy hány éve van meg a jogosítványod a kalkuláció elvégzéséhez.
+                            </div>
                         </div>
                     </div>
 

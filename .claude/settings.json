@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"C:/xampp/mysql/bin/mysql.exe\" -u root -e \"CREATE DATABASE IF NOT EXISTS pmvc CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\")"
+    ]
+  }
+}

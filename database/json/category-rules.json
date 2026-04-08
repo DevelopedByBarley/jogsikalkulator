@@ -360,14 +360,14 @@
     }
   },
   "A2-A1-less_2": {
-    "medical_price": 7500,
+    "medical_price": 0,
     "theoritical": {
       "training_price": 20000,
       "exam_fee": 11400
     },
     "practical": {
       "training_basic_hours_price": 5000,
-      "training_basic_hours": 17,
+      "training_basic_hours": 13,
       "training_extra_hours_price": 5000,
       "extra_training_hours_amount": 5,
       "practical_exam_fee_price": 26200,
@@ -379,7 +379,7 @@
     },
     "others": {
       "administration_fee": 0,
-      "document_fee": 4000
+      "document_fee": 0
     },
     "age_requirements": {
       "registration": "18 éves kortól",
@@ -388,14 +388,14 @@
     }
   },
   "A2-A1-more_2": {
-    "medical_price": 7500,
+    "medical_price": 0,
     "theoritical": {
       "training_price": 20000,
       "exam_fee": 11400
     },
     "practical": {
       "training_basic_hours_price": 5000,
-      "training_basic_hours": 17,
+      "training_basic_hours": 9,
       "training_extra_hours_price": 5000,
       "extra_training_hours_amount": 5,
       "practical_exam_fee_price": 26200,
@@ -407,7 +407,7 @@
     },
     "others": {
       "administration_fee": 0,
-      "document_fee": 4000
+      "document_fee": 0
     },
     "age_requirements": {
       "registration": "18 éves kortól",

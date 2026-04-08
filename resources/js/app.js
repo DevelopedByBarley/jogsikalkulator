@@ -203,12 +203,19 @@ export function initApp() {
             show('prev-category-from');
         } else {
             hide('prev-category-from');
+            hide('years-warning');
             document.querySelectorAll('input[name="prev_category_from_more_than_2_years"]')
                 .forEach(r => r.checked = false);
         }
 
         const yearsValue = form.querySelector('input[name="prev_category_from_more_than_2_years"]:checked')?.value || null;
-        if (requiresYears && !yearsValue) return;
+        if (requiresYears && !yearsValue) {
+            show('years-warning');
+            hide('result-card');
+            return;
+        }
+        hide('years-warning');
+        show('result-card');
 
         const key = yearsValue ? baseKey + '-' + yearsValue : baseKey;
         const config = categoryConfigs[key];
