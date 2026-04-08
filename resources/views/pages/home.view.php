@@ -328,7 +328,7 @@
                     <div class="card-body">
                         <div class="btn-group" role="group" aria-label="Évek száma">
                             <input type="radio" class="btn-check" name="prev_category_from_more_than_2_years" id="year-less-2"
-                                value="less_2" checked>
+                                value="less_2">
                             <label class="btn btn-outline-dark" for="year-less-2">Kevesebb mint 2 éve</label>
 
                             <input type="radio" class="btn-check" name="prev_category_from_more_than_2_years" id="year-more-2"

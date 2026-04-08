@@ -11,7 +11,7 @@ fetch('/api/categories')
     })
     .then(configs => {
         categoryConfigs = configs.data;
-        console.log('Category configs loaded:', categoryConfigs);
+        // console.log('Category configs loaded:', categoryConfigs);
     })
     .catch(error => console.error('Error loading category configs:', error));
 
@@ -121,14 +121,17 @@ function pairCategories(category, prev_category = 'none') {
     console.log(config);
     
     if (config) {
+
+        
         // Alkalmazzuk a konfigurációt
         data.category = category;
         data.prev_category = prev_category;
-
+        
         // Hány éve van meg az előző kategória (ha van)
         data.prev_category_from = config.prev_category_from;
         data.prev_category_from_more_than_2_years = config.prev_category_from_more_than_2_years;
-
+        
+        console.log(data.prev_category_from, data.prev_category_from_more_than_2_years);
         // Medical
         data.medical_price = config.medical_price;
         
@@ -152,11 +155,11 @@ function pairCategories(category, prev_category = 'none') {
         data.others.administration_fee = config.others.administration_fee;
         data.others.document_fee = config.others.document_fee;
         
-        console.log(`Set data for ${key}`, data);
+       // console.log(`Set data for ${key}`, data);
     } else {
         // Ha nincs specifikus konfiguráció, használjuk az alapértelmezettet
         restoreDefaultData();
-        console.log(`No specific config for ${key}, using defaults`, data);
+       // console.log(`No specific config for ${key}, using defaults`, data);
     }
 }
 
