@@ -242,6 +242,13 @@ if (!function_exists('paginate')) {
     }
 }
 
+if (!function_exists('mailer')) {
+    function mailer(): \Core\Mailer
+    {
+        return new \Core\Mailer();
+    }
+}
+
 if (!function_exists('checkAuth')) {
     function checkAuth(string $entity): bool
     {
