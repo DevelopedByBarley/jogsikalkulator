@@ -146,6 +146,12 @@ function render() {
         show('age-requirements-section');
         setText('age-registration', data.age_requirements.registration);
         setText('age-theoretical', data.age_requirements.theoretical_exam);
+        if (data.age_requirements.vehicle_handling_exam) {
+            show('age-vehicle-handling-row');
+            setText('age-vehicle-handling', data.age_requirements.vehicle_handling_exam);
+        } else {
+            hide('age-vehicle-handling-row');
+        }
         setText('age-practical', data.age_requirements.practical_exam);
     } else {
         hide('age-requirements-section');
@@ -175,7 +181,7 @@ function activatePrevCategories(category) {
         AM: ['none'],
         A1: ['none', 'AM', 'B'],
         A2: ['none', 'AM', 'A1', 'B'],
-        A:  ['none', 'AM', 'A1', 'A2'],
+        A:  ['none', 'AM', 'A1', 'A2', 'B'],
         B:  ['none', 'AM', 'A1', 'A2', 'A'],
     };
     setPrevCategoryState(map[category] || ['none']);

@@ -85,8 +85,7 @@
     },
     "age_requirements": {
       "registration": "16 év 6 hónapos kortól",
-      "theoretical_exam": "16 év 9 hónapos kortól",
-      "practical_exam": "17 éves kortól"
+      "theoretical_exam": "16 év 9 hónapos kortól"
     }
   },
   "B-A2": {
@@ -174,8 +173,9 @@
       "document_fee": 0
     },
     "age_requirements": {
-      "registration": "14 éves kortól",
-      "theoretical_exam": "14 éves kortól",
+      "registration": "13 év 6 hónapos kortól",
+      "theoretical_exam": "13 év 9 hónapos kortól",
+      "vehicle_handling_exam": "13 év 9 hónapos kortól",
       "practical_exam": "14 éves kortól"
     }
   },
@@ -204,8 +204,9 @@
       "document_fee": 0
     },
     "age_requirements": {
-      "registration": "16 éves kortól",
-      "theoretical_exam": "16 éves kortól",
+      "registration": "15 év 6 hónapos kortól",
+      "theoretical_exam": "15 év 9 hónapos kortól",
+      "vehicle_handling_exam": "16 éves kortól",
       "practical_exam": "16 éves kortól"
     }
   },
@@ -234,8 +235,9 @@
       "document_fee": 4000
     },
     "age_requirements": {
-      "registration": "16 éves kortól",
-      "theoretical_exam": "16 éves kortól",
+      "registration": "15 év 6 hónapos kortól",
+      "theoretical_exam": "15 év 9 hónapos kortól",
+      "vehicle_handling_exam": "16 éves kortól",
       "practical_exam": "16 éves kortól"
     }
   },
@@ -264,8 +266,9 @@
       "document_fee": 4000
     },
     "age_requirements": {
-      "registration": "16 éves kortól",
-      "theoretical_exam": "16 éves kortól",
+      "registration": "15 év 6 hónapos kortól",
+      "theoretical_exam": "15 év 9 hónapos kortól",
+      "vehicle_handling_exam": "16 éves kortól",
       "practical_exam": "16 éves kortól"
     }
   },
@@ -294,8 +297,9 @@
       "document_fee": 0
     },
     "age_requirements": {
-      "registration": "18 éves kortól",
-      "theoretical_exam": "18 éves kortól",
+      "registration": "17 év 6 hónapos kortól",
+      "theoretical_exam": "17 év 9 hónapos kortól",
+      "vehicle_handling_exam": "18 éves kortól",
       "practical_exam": "18 éves kortól"
     }
   },
@@ -324,8 +328,9 @@
       "document_fee": 4000
     },
     "age_requirements": {
-      "registration": "18 éves kortól",
-      "theoretical_exam": "18 éves kortól",
+      "registration": "17 év 6 hónapos kortól",
+      "theoretical_exam": "17 év 9 hónapos kortól",
+      "vehicle_handling_exam": "18 éves kortól",
       "practical_exam": "18 éves kortól"
     }
   },
@@ -354,8 +359,9 @@
       "document_fee": 4000
     },
     "age_requirements": {
-      "registration": "18 éves kortól",
-      "theoretical_exam": "18 éves kortól",
+      "registration": "17 év 6 hónapos kortól",
+      "theoretical_exam": "17 év 9 hónapos kortól",
+      "vehicle_handling_exam": "18 éves kortól",
       "practical_exam": "18 éves kortól"
     }
   },
@@ -382,8 +388,9 @@
       "document_fee": 0
     },
     "age_requirements": {
-      "registration": "18 éves kortól",
-      "theoretical_exam": "18 éves kortól",
+      "registration": "17 év 6 hónapos kortól",
+      "theoretical_exam": "17 év 9 hónapos kortól",
+      "vehicle_handling_exam": "18 éves kortól",
       "practical_exam": "18 éves kortól"
     }
   },
@@ -410,13 +417,45 @@
       "document_fee": 0
     },
     "age_requirements": {
-      "registration": "18 éves kortól",
-      "theoretical_exam": "18 éves kortól",
+      "registration": "17 év 6 hónapos kortól",
+      "theoretical_exam": "17 év 9 hónapos kortól",
+      "vehicle_handling_exam": "18 éves kortól",
       "practical_exam": "18 éves kortól"
     }
   },
-  "A-A1-less_2": {
+  "A-AM": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
     "medical_price": 7500,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 27,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 4000
+    },
+    "age_requirements": {
+      "registration": "23 év 6 hónapos kortól",
+      "theoretical_exam": "23 év 9 hónapos kortól",
+      "vehicle_handling_exam": "24 éves kortól",
+      "practical_exam": "24 éves kortól"
+    }
+  },
+  "A-A1-less_2": {
+    "medical_price": 0,
     "theoritical": {
       "training_price": 20000,
       "exam_fee": 11400
@@ -435,23 +474,24 @@
     },
     "others": {
       "administration_fee": 0,
-      "document_fee": 4000
+      "document_fee": 0
     },
     "age_requirements": {
-      "registration": "20 éves kortól",
-      "theoretical_exam": "20 éves kortól",
-      "practical_exam": "20 éves kortól"
+      "registration": "23 év 6 hónapos kortól",
+      "theoretical_exam": "23 év 9 hónapos kortól",
+      "vehicle_handling_exam": "24 éves kortól",
+      "practical_exam": "24 éves kortól"
     }
   },
   "A-A1-more_2": {
-    "medical_price": 7500,
+    "medical_price": 0,
     "theoritical": {
       "training_price": 20000,
       "exam_fee": 11400
     },
     "practical": {
       "training_basic_hours_price": 5000,
-      "training_basic_hours": 17,
+      "training_basic_hours": 11,
       "training_extra_hours_price": 5000,
       "extra_training_hours_amount": 5,
       "practical_exam_fee_price": 26200,
@@ -463,23 +503,24 @@
     },
     "others": {
       "administration_fee": 0,
-      "document_fee": 4000
+      "document_fee": 0
     },
     "age_requirements": {
-      "registration": "20 éves kortól",
-      "theoretical_exam": "20 éves kortól",
-      "practical_exam": "20 éves kortól"
+      "registration": "23 év 6 hónapos kortól",
+      "theoretical_exam": "23 év 9 hónapos kortól",
+      "vehicle_handling_exam": "24 éves kortól",
+      "practical_exam": "24 éves kortól"
     }
   },
   "A-A2-less_2": {
-    "medical_price": 7500,
+    "medical_price": 0,
     "theoritical": {
       "training_price": 20000,
       "exam_fee": 11400
     },
     "practical": {
       "training_basic_hours_price": 5000,
-      "training_basic_hours": 17,
+      "training_basic_hours": 13,
       "training_extra_hours_price": 5000,
       "extra_training_hours_amount": 5,
       "practical_exam_fee_price": 26200,
@@ -491,23 +532,55 @@
     },
     "others": {
       "administration_fee": 0,
-      "document_fee": 4000
+      "document_fee": 0
     },
     "age_requirements": {
-      "registration": "20 éves kortól",
-      "theoretical_exam": "20 éves kortól",
-      "practical_exam": "20 éves kortól"
+      "registration": "23 év 6 hónapos kortól",
+      "theoretical_exam": "23 év 9 hónapos kortól",
+      "vehicle_handling_exam": "24 éves kortól",
+      "practical_exam": "24 éves kortól"
     }
   },
   "A-A2-more_2": {
-    "medical_price": 7500,
+    "medical_price": 0,
     "theoritical": {
       "training_price": 20000,
       "exam_fee": 11400
     },
     "practical": {
       "training_basic_hours_price": 5000,
-      "training_basic_hours": 17,
+      "training_basic_hours": 9,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 0
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 0
+    },
+    "age_requirements": {
+      "registration": "20 éves kortól",
+      "theoretical_exam": "20 éves kortól",
+      "vehicle_handling_exam": "20 éves kortól",
+      "practical_exam": "20 éves kortól"
+    }
+  },
+  "A-B": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": 0,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 27,
       "training_extra_hours_price": 5000,
       "extra_training_hours_amount": 5,
       "practical_exam_fee_price": 26200,
@@ -522,9 +595,41 @@
       "document_fee": 4000
     },
     "age_requirements": {
-      "registration": "20 éves kortól",
-      "theoretical_exam": "20 éves kortól",
-      "practical_exam": "20 éves kortól"
+      "registration": "23 év 6 hónapos kortól",
+      "theoretical_exam": "23 év 9 hónapos kortól",
+      "vehicle_handling_exam": "24 éves kortól",
+      "practical_exam": "24 éves kortól"
+    }
+  },
+   "A-none": {
+    "prev_category_from": false,
+    "prev_category_from_more_than_2_years": null,
+    "medical_price": 7500,
+    "theoritical": {
+      "training_price": 20000,
+      "exam_fee": 11400
+    },
+    "practical": {
+      "training_basic_hours_price": 5000,
+      "training_basic_hours": 27,
+      "training_extra_hours_price": 5000,
+      "extra_training_hours_amount": 5,
+      "practical_exam_fee_price": 26200,
+      "vehicle_handling_price": 9800
+    },
+    "first_aid": {
+      "training_basic_price": 0,
+      "exam_fee": 20900
+    },
+    "others": {
+      "administration_fee": 0,
+      "document_fee": 0
+    },
+    "age_requirements": {
+      "registration": "23 év 6 hónapos kortól",
+      "theoretical_exam": "23 év 9 hónapos kortól",
+      "vehicle_handling_exam": "24 éves kortól",
+      "practical_exam": "24 éves kortól"
     }
   }
 }
