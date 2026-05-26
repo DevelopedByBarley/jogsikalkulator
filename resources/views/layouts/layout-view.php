@@ -67,7 +67,7 @@
             });
         });
     </script>
-    <script type="module" src="/resources/js/main.js"></script>
+    <script type="module" src="/resources/js/main.js?v=<?= max(array_map('filemtime', glob(base_path('resources/js/*.js')))) ?>"></script>
 </body>
 
 </html>

@@ -137,7 +137,7 @@
                                 <span class="fw-bold" id="practical_basic_hours_display">30 óra</span>
                             </div>
 
-                            <div class="mb-4 pt-2 border-top">
+                            <div class="mb-2 pt-2 border-top">
                                 <div class="d-flex justify-content-between mb-1">
                                     <label class="form-label mb-0">Gyakorlati óradíj (pótóra)</label>
                                     <span class="fw-bold text-primary" id="practical_extra_price_display">5 000 Ft</span>
@@ -148,6 +148,12 @@
                                     <small class="text-secondary">5 000 Ft</small>
                                     <small class="text-secondary">15 000 Ft</small>
                                 </div>
+                            </div>
+                            <div class="form-check mb-4 px-3 py-2 rounded" style="background:#e8f4ff; border: 1px solid #b6d4fe;">
+                                <input class="form-check-input" type="checkbox" id="sync-extra-to-basic" checked>
+                                <label class="form-check-label small fw-semibold" for="sync-extra-to-basic" style="color:#1e3a5f;">
+                                    gyakorlati pótóra díja megegyezik az alapóra díjával
+                                </label>
                             </div>
 
                             <div class="mb-4 pt-2 border-top">
@@ -378,4 +384,42 @@
             dst.innerHTML = src.innerHTML;
         }
     });
+</script>
+
+<script>
+    (function () {
+        var syncing = false;
+
+        function initSliderSync() {
+            var basicSlider = document.getElementById('practical_basic_price_slider');
+            var extraSlider = document.getElementById('practical_extra_price_slider');
+            var syncCheckbox = document.getElementById('sync-extra-to-basic');
+
+            if (!basicSlider || !extraSlider || !syncCheckbox) return;
+
+            basicSlider.addEventListener('input', function () {
+                if (syncCheckbox.checked && !syncing) {
+                    syncing = true;
+                    extraSlider.value = this.value;
+                    extraSlider.dispatchEvent(new Event('input'));
+                    syncing = false;
+                }
+            });
+
+            extraSlider.addEventListener('input', function () {
+                if (syncCheckbox.checked && !syncing) {
+                    syncing = true;
+                    basicSlider.value = this.value;
+                    basicSlider.dispatchEvent(new Event('input'));
+                    syncing = false;
+                }
+            });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSliderSync);
+        } else {
+            initSliderSync();
+        }
+    })();
 </script>

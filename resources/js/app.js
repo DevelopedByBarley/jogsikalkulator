@@ -93,7 +93,8 @@ function render() {
         setText('result-medical', fmtFt(med));
     } else {
         hide('medical-row');
-        hide('result-medical-row');
+        show('result-medical-row');
+        setText('result-medical', fmtFt(0));
     }
 
     // Elmélet
