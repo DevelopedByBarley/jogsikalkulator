@@ -128,7 +128,7 @@
                                     min="5000" max="15000" step="100" value="5000">
                                 <div class="d-flex justify-content-between">
                                     <small class="text-secondary">5 000 Ft</small>
-                                    <small class="text-secondary">15 000 Ft</small>
+                                    <small class="text-secondary" id="practical_basic_price_max_label">15 000 Ft</small>
                                 </div>
                             </div>
 
@@ -146,7 +146,7 @@
                                     min="5000" max="15000" step="100" value="5000">
                                 <div class="d-flex justify-content-between">
                                     <small class="text-secondary">5 000 Ft</small>
-                                    <small class="text-secondary">15 000 Ft</small>
+                                    <small class="text-secondary" id="practical_extra_price_max_label">15 000 Ft</small>
                                 </div>
                             </div>
                             <div class="form-check mb-4 px-3 py-2 rounded" style="background:#e8f4ff; border: 1px solid #b6d4fe;">

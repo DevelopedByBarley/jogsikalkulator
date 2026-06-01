@@ -2,7 +2,9 @@
 import { initUi, onReady } from './ui.js';
 import { validator } from './validator.js';
 import { cookie } from './cookie.js';
-import { initApp } from './app.js';
+
+const _v = new URL(import.meta.url).searchParams.get('v') ?? '';
+const { initApp } = await import('./app.js?v=' + _v);
 
 // Egyszerű app objektum: itt van a belépési pont és az események kötése.
 const app = {

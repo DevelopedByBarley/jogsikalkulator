@@ -159,6 +159,23 @@ function render() {
     }
 }
 
+function updatePracticalSliderMax(category) {
+    const highMaxCategories = new Set(['A1', 'A2', 'A', 'B']);
+    const max = highMaxCategories.has(category) ? 25000 : 15000;
+    const label = max.toLocaleString('hu-HU') + ' Ft';
+
+    ['practical_basic_price_slider', 'practical_extra_price_slider'].forEach(id => {
+        const slider = document.getElementById(id);
+        if (!slider) return;
+        slider.max = max;
+        if (parseInt(slider.value) > max) {
+            slider.value = max;
+        }
+    });
+    setText('practical_basic_price_max_label', label);
+    setText('practical_extra_price_max_label', label);
+}
+
 function setPrevCategoryState(allowed) {
     const allowedSet = new Set(['none', ...allowed]);
     let hasChecked = false;
@@ -196,6 +213,7 @@ export function initApp() {
     // Azonnal renderelünk az alapértékekkel (API nélkül is látható)
     calculate();
     render();
+    updatePracticalSliderMax('B');
 
     // Rádió változás kezelő
     function onRadioChange() {
@@ -233,6 +251,7 @@ export function initApp() {
             applyConfig(config);
         }
 
+        updatePracticalSliderMax(category);
         calculate();
         render();
     }
