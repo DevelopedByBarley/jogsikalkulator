@@ -1,5 +1,7 @@
 
 
+<?php require base_path('resources/views/components/hero.view.php'); ?>
+
 <section class="py-5" style="background: #f1f5f9;">
     <div class="container">
 
