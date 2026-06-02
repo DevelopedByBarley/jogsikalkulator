@@ -15,23 +15,16 @@
             }
         };
     </script>
-    <style>
-        html, body {
-            height: 100%;
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-            background: #f8fafc;
-            min-height: 100vh;
-        }
-        main {
-            flex: 1 0 auto;
-        }
-        footer {
-            flex-shrink: 0;
-        }
-    </style>
+    <?php
+        $cssVersion = max(array_map('filemtime', glob(base_path('resources/css/*.css'))));
+        $cssFiles = ['layout', 'navbar', 'hero', 'calculator-nav', 'toast', 'footer', 'home'];
+        foreach ($cssFiles as $file):
+            $path = base_path("resources/css/{$file}.css");
+            if (file_exists($path)):
+    ?>
+    <link rel="stylesheet" href="/resources/css/<?= $file ?>.css?v=<?= $cssVersion ?>">
+    <?php endif; endforeach; ?>
+
 </head>
 
 <body>
