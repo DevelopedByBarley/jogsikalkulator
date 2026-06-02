@@ -1,37 +1,77 @@
-.footer-link {
-    color: #64748b;
-    text-decoration: none;
-    font-size: 0.875rem;
-    transition: color 0.2s;
+.site-footer {
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    color: #555;
 }
-.footer-link:hover {
-    color: #0ea5e9;
-}
-.footer-link-small {
-    color: #475569;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: color 0.2s;
-}
-.footer-link-small:hover {
-    color: #0ea5e9;
-}
-.footer-social-link {
-    display: inline-flex;
+
+/* Brand sor */
+.footer-brand {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.08);
-    color: #64748b;
-    text-decoration: none;
-    transition: all 0.2s;
+    gap: 8px;
 }
-.footer-social-link:hover {
-    background: linear-gradient(135deg, rgba(14,165,233,0.2), rgba(16,185,129,0.2));
-    border-color: rgba(14,165,233,0.4);
-    color: #0ea5e9;
-    transform: translateY(-2px);
+.footer-brand-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.footer-brand-dot--blue  { background: #1e5fa3; }
+.footer-brand-dot--green { background: #16a34a; }
+.footer-brand-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -0.02em;
+}
+
+/* Szövegek */
+.footer-org {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0.75rem 0 0.3rem;
+    font-weight: 600;
+}
+.footer-meta {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 0.75rem;
+}
+.footer-email {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #16a34a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.15s;
+}
+.footer-email:hover { color: #15803d; }
+
+/* Oszlop fejléc */
+.footer-heading {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+/* Linkek */
+.footer-link {
+    font-size: 0.875rem;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+.footer-link:hover { color: #16a34a; }
+
+/* Alsó sáv */
+.footer-bottom {
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 1rem 0;
+}
+.footer-copy {
+    font-size: 0.78rem;
+    color: #999;
 }

@@ -22,6 +22,13 @@ if (!function_exists('config_path')) {
     }
 }
 
+if(!function_exists('component')) {
+    function component(string $path = ''): string
+    {
+        return base_path('resources/views/components/' . ltrim($path, '/') . '.view.php');
+    }
+}
+
 if (!function_exists('env')) {
     function env(string $key, mixed $default = null): mixed
     {

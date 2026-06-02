@@ -87,11 +87,13 @@ function render() {
     // Orvosi
     const med = parseInt(data.medical_price);
     if (!isNaN(med) && data.medical_price !== null) {
+        show('orvosi');
         show('medical-row');
         setText('medical_price_display', fmtFt(med));
         show('result-medical-row');
         setText('result-medical', fmtFt(med));
     } else {
+        hide('orvosi');
         hide('medical-row');
         show('result-medical-row');
         setText('result-medical', fmtFt(0));

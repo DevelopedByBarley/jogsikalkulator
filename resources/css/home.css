@@ -16,8 +16,18 @@
 }
 
 .cat-card { background: #dff0dc; border-radius: 8px; overflow: hidden; }
+.cat-card--blue { background: #dce8f7; border-radius: 8px; overflow: hidden; }
 .cat-header {
     background: #3a8a3e;
+    color: #fff;
+    padding: 1rem 2rem 1rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 50%, calc(100% - 28px) 100%, 0 100%);
+}
+.cat-header--blue {
+    background: #1e5fa3;
     color: #fff;
     padding: 1rem 2rem 1rem 1.5rem;
     font-size: 1.6rem;
@@ -56,3 +66,158 @@
 .btn-check:checked + .vehicle-label { background: #3a8a3e; }
 .vehicle-label:hover { background: #4a6572; }
 .btn-check:checked + .vehicle-label:hover { background: #2e7d32; }
+
+.btn-check:disabled + .vehicle-label {
+    opacity: 0.45;
+    cursor: not-allowed;
+    background: #90a4ae;
+    position: relative;
+    filter: grayscale(60%);
+}
+.btn-check:disabled + .vehicle-label::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0,0,0,0.08) 0px,
+        rgba(0,0,0,0.08) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+    border-radius: 5px;
+    pointer-events: none;
+}
+.btn-check:disabled + .vehicle-label::before {
+    content: '✕';
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    font-size: 0.6rem;
+    font-weight: 900;
+    color: rgba(255,255,255,0.85);
+    line-height: 1;
+    pointer-events: none;
+}
+
+/* ── Tartalom oszlop ── */
+.calc-info-block {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+.calc-info-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.calc-info-banner {
+    position: relative;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1.1rem;
+    background-size: cover;
+    background-position: center;
+    background-color: #cbd5e1;
+    display: flex;
+    align-items: flex-end;
+}
+.calc-info-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10,20,40,0.82) 0%, rgba(10,20,40,0.3) 50%, transparent 100%);
+}
+.calc-info-title {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0;
+    padding: 1rem 1.25rem;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+}
+
+.calc-info-subtitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #334155;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+.calc-content p,
+.calc-content li {
+    font-size: 0.92rem;
+    color: #475569;
+    line-height: 1.65;
+}
+.calc-content ul {
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.calc-content ul li {
+    margin-bottom: 0.3rem;
+}
+
+/* ── Összehasonlítás banner ── */
+.compare-banner-section {
+    background: linear-gradient(135deg, #1e5fa3 0%, #3a8a3e 100%);
+    padding: 3.5rem 0;
+}
+.compare-banner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.compare-banner-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.compare-banner-desc {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin: 0;
+}
+.compare-banner-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff;
+    color: #0f172a;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.compare-banner-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(0,0,0,0.35);
+}
+.compare-banner-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ef4444;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 0 5px;
+    line-height: 1;
+}
