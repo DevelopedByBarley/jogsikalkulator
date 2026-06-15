@@ -27,6 +27,8 @@
 }
 
 .calc-nav-item svg {
+    width: 44px;
+    height: 44px;
     color: #6b7280;
     transition: color 0.15s;
 }
@@ -34,6 +36,7 @@
 .calc-nav-item:hover {
     color: #30B460;
     background: #E8F8EF;
+    border-color: #0074B4;
 }
 
 .calc-nav-item:hover svg {

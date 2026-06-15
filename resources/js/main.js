@@ -1,5 +1,5 @@
 // Behúzzuk a külön modulból az induláshoz szükséges függvényeket.
-import { initUi, onReady } from './ui.js';
+import { initUi, onReady, initCalcNav } from './ui.js';
 import { validator } from './validator.js';
 import { cookie } from './cookie.js';
 import { initHome } from './home.js';
@@ -13,6 +13,7 @@ const app = {
     boot() {
         initApp();
         initUi();
+        initCalcNav();
         validator();
         cookie();
         initHome();

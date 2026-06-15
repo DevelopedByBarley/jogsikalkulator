@@ -24,6 +24,34 @@ export function initToasts() {
     });
 }
 
+export function initCalcNav() {
+    const navItems = document.querySelectorAll('.calc-nav-item');
+    if (!navItems.length) return;
+
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navItems.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+        });
+    });
+
+    const sections = Array.from(navItems)
+        .map(item => document.querySelector(item.getAttribute('href')))
+        .filter(Boolean);
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const id = entry.target.id;
+            navItems.forEach(item => {
+                item.classList.toggle('active', item.getAttribute('href') === `#${id}`);
+            });
+        });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    sections.forEach(section => observer.observe(section));
+}
+
 export function onReady(callback) {
     // Ha a DOM még nem kész, várunk a DOMContentLoaded eseményre.
     if (document.readyState === 'loading') {

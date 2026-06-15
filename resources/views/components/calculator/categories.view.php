@@ -14,8 +14,7 @@
                             <div class="vehicle-grid mb-4">
                                 <input type="radio" class="btn-check" name="category" id="cat-am" value="AM">
                                 <label class="vehicle-label" for="cat-am">
-                                    <svg width="38" height="28" viewBox="0 0 64 40" fill="white"><ellipse cx="12" cy="34" rx="8" ry="6"/><ellipse cx="52" cy="34" rx="8" ry="6"/><path d="M20,34 Q20,20 30,18 L42,16 L54,20 L54,34"/><path d="M28,18 L28,10 Q34,8 38,12 L40,16"/><rect x="24" y="6" width="12" height="6" rx="2"/></svg>
-                                    AM
+                                    <img src="/public/assets/icons/am-inakt.png" alt="AM" width="70" height="70" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="category" id="cat-a1" value="A1">
                                 <label class="vehicle-label" for="cat-a1">
@@ -43,8 +42,7 @@
                             <div class="vehicle-grid mb-3">
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-am" value="AM">
                                 <label class="vehicle-label" for="prev-am">
-                                    <svg width="38" height="28" viewBox="0 0 64 40" fill="white"><ellipse cx="12" cy="34" rx="8" ry="6"/><ellipse cx="52" cy="34" rx="8" ry="6"/><path d="M20,34 Q20,20 30,18 L42,16 L54,20 L54,34"/><path d="M28,18 L28,10 Q34,8 38,12 L40,16"/><rect x="24" y="6" width="12" height="6" rx="2"/></svg>
-                                    AM
+                                    <img src="/public/assets/icons/am-inakt.png" alt="AM" width="70" height="70" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-a1" value="A1">
                                 <label class="vehicle-label" for="prev-a1">

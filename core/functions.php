@@ -29,6 +29,14 @@ if(!function_exists('component')) {
     }
 }
 
+if(!function_exists('asset')) {
+    function asset(string $path = '', string $extension = 'png'): string
+    {
+        return base_path('public/assets/' . ltrim($path, '/') . '.' . $extension);
+    }
+}
+
+
 if (!function_exists('env')) {
     function env(string $key, mixed $default = null): mixed
     {
