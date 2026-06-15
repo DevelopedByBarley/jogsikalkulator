@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="mainNavbarCollapse">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">Rólunk</a>
+                    <a class="nav-link" href="/rolunk">Rólunk</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/alapkovetelmenyek">Alapkövetelmények</a>
@@ -28,7 +28,7 @@
                     <a class="nav-link" href="/kepzes-menete">Képzés menete</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/posts">Hasznos tippek</a>
+                    <a class="nav-link" href="/hasznos-tippek">Hasznos tippek</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/">Jogsikalkulátor</a>

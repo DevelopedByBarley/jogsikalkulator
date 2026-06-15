@@ -13,3 +13,15 @@ main {
 footer {
     flex-shrink: 0;
 }
+
+/* Globális szín felülírások */
+.btn-success {
+    background-color: #30B460 !important;
+    border-color: #30B460 !important;
+}
+.btn-success:hover, .btn-success:focus {
+    background-color: #27A050 !important;
+    border-color: #27A050 !important;
+}
+.text-success { color: #30B460 !important; }
+a.text-success:hover { color: #27A050 !important; }

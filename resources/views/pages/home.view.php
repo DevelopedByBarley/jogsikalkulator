@@ -64,6 +64,19 @@
     </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.querySelector('[data-bs-target="#calculationModal"]');
+    if (btn) {
+        btn.addEventListener('click', function () {
+            var src = document.getElementById('result-card-body');
+            var dst = document.getElementById('modal-result-body');
+            if (src && dst) dst.innerHTML = src.innerHTML;
+        });
+    }
+});
+</script>
+
 <!-- Kalkuláció összesítő modal -->
 <div class="modal fade" id="calculationModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -80,66 +93,3 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Banner badge szinkronizálás a nav compare-count-tal
-        var navBadge = document.getElementById('compare-count');
-        var bannerBadge = document.getElementById('compare-banner-count');
-        if (navBadge && bannerBadge) {
-            bannerBadge.textContent = navBadge.textContent;
-            new MutationObserver(function() {
-                bannerBadge.textContent = navBadge.textContent;
-            }).observe(navBadge, { childList: true, characterData: true, subtree: true });
-        }
-
-        // Sticky top dinamikus beállítása
-        var navbar = document.getElementById('mainNavbar');
-        var calcNav = document.getElementById('calculator-nav');
-        if (navbar && calcNav) {
-            var offset = navbar.offsetHeight + calcNav.offsetHeight + 16;
-            document.querySelectorAll('.calc-sticky').forEach(function(el) {
-                el.style.top = offset + 'px';
-            });
-        }
-    });
-
-    document.getElementById('calculationModal').addEventListener('show.bs.modal', function() {
-        var src = document.getElementById('result-card-body');
-        var dst = document.getElementById('modal-result-body');
-        if (src && dst) dst.innerHTML = src.innerHTML;
-    });
-</script>
-
-<script>
-    (function() {
-        var syncing = false;
-
-        function initSliderSync() {
-            var basicSlider = document.getElementById('practical_basic_price_slider');
-            var extraSlider = document.getElementById('practical_extra_price_slider');
-            var syncCheckbox = document.getElementById('sync-extra-to-basic');
-            if (!basicSlider || !extraSlider || !syncCheckbox) return;
-            basicSlider.addEventListener('input', function() {
-                if (syncCheckbox.checked && !syncing) {
-                    syncing = true;
-                    extraSlider.value = this.value;
-                    extraSlider.dispatchEvent(new Event('input'));
-                    syncing = false;
-                }
-            });
-            extraSlider.addEventListener('input', function() {
-                if (syncCheckbox.checked && !syncing) {
-                    syncing = true;
-                    basicSlider.value = this.value;
-                    basicSlider.dispatchEvent(new Event('input'));
-                    syncing = false;
-                }
-            });
-        }
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initSliderSync);
-        } else {
-            initSliderSync();
-        }
-    })();
-</script>

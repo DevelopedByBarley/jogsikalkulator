@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/megnezni.webp')">
+                        <div class="calc-info-banner" style="background: url('/public/assets/aboutpage/about-2.jpg') center 60% /cover;">
                             <h3 class="calc-info-title">Amit mindenképpen érdemes megnézni</h3>
                         </div>
 
@@ -147,7 +147,7 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/segit.webp')">
+                        <div class="calc-info-banner" style="background: url('/public/assets/aboutpage/about-1.jpg') center 60% /cover;">
                             <h3 class="calc-info-title">Miben segít neked a jogsikalkulator.hu?</h3>
                         </div>
                         <p>Az autósiskola kiválasztása nem egyszerű feladat, hiszen nagy döntésről van szó, amit ráadásul a legtöbb ember csak egyszer tesz meg életében. Komoly pénzösszeg kiadásáról határozol, de ennél is fontosabb az, hogy a képzésen milyen elméleti és gyakorlati tudást kapsz.</p>

@@ -15,10 +15,10 @@
     /* ne nyúljon a sor magasságára */
 }
 
-.cat-card { background: #dff0dc; border-radius: 8px; overflow: hidden; }
-.cat-card--blue { background: #dce8f7; border-radius: 8px; overflow: hidden; }
+.cat-card { background: #B8E6C7; border-radius: 8px; overflow: hidden; }
+.cat-card--blue { background: #B8E0FF; border-radius: 8px; overflow: hidden; }
 .cat-header {
-    background: #3a8a3e;
+    background: #30B460;
     color: #fff;
     padding: 1rem 2rem 1rem 1.5rem;
     font-size: 1.6rem;
@@ -27,7 +27,7 @@
     clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 50%, calc(100% - 28px) 100%, 0 100%);
 }
 .cat-header--blue {
-    background: #1e5fa3;
+    background: #0074B4;
     color: #fff;
     padding: 1rem 2rem 1rem 1.5rem;
     font-size: 1.6rem;
@@ -63,9 +63,9 @@
     letter-spacing: 0.03em;
 }
 .vehicle-label svg { flex-shrink: 0; }
-.btn-check:checked + .vehicle-label { background: #3a8a3e; }
+.btn-check:checked + .vehicle-label { background: #30B460; }
 .vehicle-label:hover { background: #4a6572; }
-.btn-check:checked + .vehicle-label:hover { background: #2e7d32; }
+.btn-check:checked + .vehicle-label:hover { background: #27A050; }
 
 .btn-check:disabled + .vehicle-label {
     opacity: 0.45;
@@ -163,9 +163,63 @@
     margin-bottom: 0.3rem;
 }
 
+/* ── Mobilos tab layout ── */
+@media (max-width: 991.98px) {
+    .calc-sticky {
+        position: static !important;
+        top: auto !important;
+    }
+
+    .row.g-5.calc-tab-row {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .calc-tab-nav {
+        display: flex;
+        border-bottom: 2px solid #e2e8f0;
+        margin-bottom: 1.25rem;
+    }
+    .calc-tab-btn {
+        flex: 1;
+        padding: 0.65rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        background: none;
+        border: none;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -2px;
+        color: #94a3b8;
+        cursor: pointer;
+        transition: color 0.15s, border-color 0.15s;
+    }
+    .calc-tab-btn.active {
+        color: #30B460;
+        border-bottom-color: #30B460;
+    }
+
+    .calc-tab-row > .col-lg-5,
+    .calc-tab-row > .col-lg-7 {
+        display: none;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .calc-tab-row > .col-lg-5.tab-active,
+    .calc-tab-row > .col-lg-7.tab-active {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .calc-tab-nav { display: none !important; }
+}
+
 /* ── Összehasonlítás banner ── */
 .compare-banner-section {
-    background: linear-gradient(135deg, #1e5fa3 0%, #3a8a3e 100%);
+    background: linear-gradient(135deg, #0074B4 0%, #30B460 100%);
     padding: 3.5rem 0;
 }
 .compare-banner-inner {

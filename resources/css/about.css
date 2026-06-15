@@ -1,0 +1,94 @@
+.about-hero {
+    background: linear-gradient(135deg, #0074B4 0%, #30B460 100%);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+.about-hero-overlay { display: none; }
+.about-hero-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.about-hero-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+@media (max-width: 575.98px) {
+    .about-hero-title { font-size: 1.6rem; }
+}
+
+.about-block {
+    margin-bottom: 3.5rem;
+    padding-bottom: 3.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+.about-block:last-of-type {
+    border-bottom: none;
+    margin-bottom: 2rem;
+}
+.about-section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0074B4;
+    margin-bottom: 1.1rem;
+    line-height: 1.35;
+}
+.about-block p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.75;
+    margin-bottom: 0.9rem;
+}
+.about-img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.1);
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+/* Lapozó navigáció */
+.about-page-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+    gap: 1rem;
+}
+.about-page-nav-prev { flex: 1; }
+.about-page-nav-next { flex: 1; text-align: right; }
+
+.about-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    border: 1.5px solid #e2e8f0;
+    background: #fff;
+    color: #334155;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.about-nav-btn:hover {
+    border-color: #30B460;
+    color: #30B460;
+    background: #E8F8EF;
+}
+.about-nav-btn--next { flex-direction: row-reverse; }
+
+@media (max-width: 575.98px) {
+    .about-hero-title { font-size: 1.3rem; }
+    .about-block { margin-bottom: 2rem; padding-bottom: 2rem; }
+    .about-nav-btn span { display: none; }
+    .about-nav-btn { padding: 0.6rem; }
+}

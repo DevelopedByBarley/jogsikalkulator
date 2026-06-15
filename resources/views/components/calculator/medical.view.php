@@ -16,7 +16,7 @@
                 <div class="col-lg-7 calc-content">
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/egeszsegugyi.webp')">
+                        <div class="calc-info-banner" style="background: url('/public/assets/homepage/first-aid.jpg') center 40% /cover;">
                             <h3 class="calc-info-title">Egészségügyi alkalmasság</h3>
                         </div>
                         <p>Az AM kategória kivételével a vezetői engedély megszerzésének feltétele az egészségügyi alkalmasság igazolása is. Az A1, A2, A és B kategóriás jogosítványokhoz úgynevezett 1. alkalmassági csoport szerinti igazolást kell beszerezned a házi- vagy üzemorvostól. Ezt legkésőbb az elméleti vizsgára történő jelentkezésedig kell megszerezned.</p>

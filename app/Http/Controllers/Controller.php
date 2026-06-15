@@ -91,7 +91,7 @@ abstract class Controller
         return $this;
     }
 
-    protected function view(string $view, array $data = [], ?string $layout = 'layouts.layout-view'): Response
+    protected function view(string $view, array $data = [], ?string $layout = 'layouts.layout'): Response
     {
         $viewPath = $this->resolveViewPath($view);
         $content = $this->renderPhp($viewPath, $data);

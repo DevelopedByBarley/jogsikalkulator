@@ -2,6 +2,8 @@
 import { initUi, onReady } from './ui.js';
 import { validator } from './validator.js';
 import { cookie } from './cookie.js';
+import { initHome } from './home.js';
+import { initTabs } from './tabs.js';
 
 const _v = new URL(import.meta.url).searchParams.get('v') ?? '';
 const { initApp } = await import('./app.js?v=' + _v);
@@ -10,12 +12,11 @@ const { initApp } = await import('./app.js?v=' + _v);
 const app = {
     boot() {
         initApp();
-        // Alap UI inicializálás.
         initUi();
-        // Form validáció inicializálás.
         validator();
-        // Cookie kezelés inicializálás.
         cookie();
+        initHome();
+        initTabs();
         // Globális event listener-ek regisztrálása.
         this.bindEvents();
     },

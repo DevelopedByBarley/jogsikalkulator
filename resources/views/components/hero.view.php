@@ -22,7 +22,7 @@
 
             <!-- Jobb: linkek -->
             <div class="col-lg-6 d-none d-lg-block">
-                <span class="badge mb-3 px-3 py-2 fs-6 fw-semibold" style="background:#16a34a;">
+                <span class="badge mb-3 px-3 py-2 fs-6 fw-semibold" style="background:#30B460;">
                     Miben segít neked a jogsikalkulator.hu?
                 </span>
                 <div class="d-flex flex-column gap-2">

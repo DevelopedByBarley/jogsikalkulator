@@ -32,21 +32,50 @@
 }
 
 .calc-nav-item:hover {
-    color: #16a34a;
-    background: #f0fdf4;
+    color: #30B460;
+    background: #E8F8EF;
 }
 
 .calc-nav-item:hover svg {
-    color: #16a34a;
+    color: #30B460;
 }
 
 .calc-nav-item.active {
-    color: #16a34a;
-    border-color: #3b82f6;
+    color: #30B460;
+    border-color: #0074B4;
 }
 
 .calc-nav-item.active svg {
-    color: #16a34a;
+    color: #30B460;
+}
+
+@media (max-width: 991.98px) {
+    #calculator-nav .container {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+    #calculator-nav .d-flex {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        justify-content: flex-start !important;
+    }
+    #calculator-nav .d-flex::-webkit-scrollbar {
+        display: none;
+    }
+    .calc-nav-item {
+        flex: 0 0 auto;
+        min-width: 72px;
+        font-size: 0.65rem;
+        padding: 0.6rem 0.5rem;
+        margin: 4px 2px;
+    }
+    .calc-nav-item svg {
+        width: 26px;
+        height: 26px;
+    }
 }
 
 .calc-nav-badge {

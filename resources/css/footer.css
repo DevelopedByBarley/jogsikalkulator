@@ -16,8 +16,8 @@
     border-radius: 50%;
     display: inline-block;
 }
-.footer-brand-dot--blue  { background: #1e5fa3; }
-.footer-brand-dot--green { background: #16a34a; }
+.footer-brand-dot--blue  { background: #0074B4; }
+.footer-brand-dot--green { background: #30B460; }
 .footer-brand-name {
     font-size: 1.2rem;
     font-weight: 700;
@@ -40,12 +40,12 @@
 .footer-email {
     display: inline-block;
     font-size: 0.875rem;
-    color: #16a34a;
+    color: #30B460;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.15s;
 }
-.footer-email:hover { color: #15803d; }
+.footer-email:hover { color: #27A050; }
 
 /* Oszlop fejléc */
 .footer-heading {
@@ -64,7 +64,7 @@
     text-decoration: none;
     transition: color 0.15s;
 }
-.footer-link:hover { color: #16a34a; }
+.footer-link:hover { color: #30B460; }
 
 /* Alsó sáv */
 .footer-bottom {

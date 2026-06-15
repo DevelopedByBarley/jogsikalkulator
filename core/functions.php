@@ -206,8 +206,17 @@ if (!function_exists('view')) {
     {
         extract($data);
         ob_start();
-        require base_path("resources/views/{$view}.php");
+        require base_path("resources/views/{$view}.view.php");
         return ob_get_clean();
+    }
+}
+
+if (!function_exists('page')) {
+    function page(string $view, array $data = [], string $layout = 'layouts/layout'): \Symfony\Component\HttpFoundation\Response
+    {
+        $content = view($view, $data);
+        $html    = view($layout, array_merge($data, ['content' => $content]));
+        return new \Symfony\Component\HttpFoundation\Response($html);
     }
 }
 

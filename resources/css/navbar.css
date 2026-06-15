@@ -13,7 +13,7 @@
     letter-spacing: -0.01em;
 }
 #mainNavbar .navbar-brand .accent {
-    color: #16a34a;
+    color: #30B460;
 }
 #mainNavbar .nav-link {
     font-size: 0.72rem;
@@ -26,10 +26,10 @@
     white-space: nowrap;
 }
 #mainNavbar .nav-link:hover {
-    color: #16a34a;
+    color: #30B460;
 }
 #mainNavbar .nav-link.active {
-    color: #16a34a;
+    color: #30B460;
 }
 #mainNavbar .nav-icon {
     display: flex;
@@ -40,5 +40,5 @@
     text-decoration: none;
 }
 #mainNavbar .nav-icon:hover {
-    color: #16a34a;
+    color: #30B460;
 }

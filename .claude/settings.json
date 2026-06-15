@@ -5,7 +5,8 @@
       "Bash(composer require *)",
       "Bash(python -c \"import sys,json; data=json.load\\(sys.stdin\\); print\\(json.dumps\\(list\\(data.keys\\(\\)\\), indent=2\\)\\)\")",
       "Bash(Get-Content \"c:\\\\xampp\\\\htdocs\\\\jogsikalkulator\\\\database\\\\json\\\\category-rules.json\")",
-      "Bash(Select-Object -First 30)"
+      "Bash(Select-Object -First 30)",
+      "Bash(node -e \"const fs=require\\('fs'\\); try{require\\('./resources/js/home.js'\\)}catch\\(e\\){console.log\\(e.message\\)}\")"
     ]
   }
 }
