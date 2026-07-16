@@ -17,7 +17,7 @@
 
             <!-- Kötelező iskolai végzettség -->
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background: url('/public/assets/aboutpage/vegzettseg.jpg') center 50% /cover;">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_551388246_xl.jpg') center 75%/cover;">
                     <h2 class="calc-info-title">Kötelező iskolai végzettség</h2>
                 </div>
                 <p>Az „AM" kategória (segédmotoros kerékpár) kivételével előírás, hogy legalább alapfokú iskolai végzettséggel kell rendelkezned, amit a legújabb előírások szerint az első (általában elméleti) vizsgádon kell a megfelelő (általános iskolai vagy magasabb szintű) bizonyítvánnyal igazolnod.</p>
@@ -25,7 +25,7 @@
 
             <!-- Életkor -->
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background: url('/public/assets/aboutpage/eletkor.jpg') center 50% /cover;">
+                <div class="calc-info-banner mb-4">
                     <h2 class="calc-info-title">Életkor</h2>
                 </div>
                 <p>Az egyes jogosítványkategóriák megszerzésének eltérő életkori feltételei vannak.</p>
@@ -36,7 +36,7 @@
 
             <!-- Egészségügyi alkalmasság -->
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background: url('/public/assets/homepage/first-aid.jpg') center 40% /cover;">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_324649242_xl.jpg') center 40% /cover;">
                     <h2 class="calc-info-title">Egészségügyi alkalmasság</h2>
                 </div>
                 <p>Az AM kategória kivételével a vezetői engedély megszerzésének feltétele az egészségügyi alkalmasság igazolása is. Az A1, A2, A és B kategóriás jogosítványokhoz úgynevezett 1. alkalmassági csoport szerinti igazolást kell beszerezned a házi- vagy üzemorvostól. Ezt legkésőbb az elméleti vizsgára történő jelentkezésedig kell megszerezned.</p>

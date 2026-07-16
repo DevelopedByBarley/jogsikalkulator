@@ -26,7 +26,7 @@
                 <div class="col-lg-7 calc-content">
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/tul-lassu.webp')">
+                        <div class="calc-info-banner" style="background-image: url('/public/assets/depositphotos_121226864_xl.jpg')">
                             <h3 class="calc-info-title">Túl lassú tempó</h3>
                         </div>
                         <p>A jogosítvány megszerzésének maximális időkorlátja is van, ugyanis a jogszabályok nem engedik meg, hogy a képzési folyamat tetszőlegesen hosszúra nyúljon. Az elméleti tanfolyamod megkezdésétől számítva – tantermi tanfolyam esetén ez az első foglalkozás időpontja, e‑learning képzés esetén pedig az a pillanat, amikor először belépsz az elektronikus tananyagba – 9 hónapon belül elméleti vizsgát kell tenned, és szintén az elméleti tanfolyam megkezdésétől számítva legkésőbb 12 hónapon belül rendelkezned kell sikeres elméleti vizsgával. Ezt követően pedig két éved van arra, hogy gyakorlati képzésed sikeres vizsgával befejezd.</p>
@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/elmelet.webp')">
+                        <div class="calc-info-banner" style="background-image: url('/public/assets/depositphotos_767765320_xl.jpg')">
                             <h3 class="calc-info-title">Elmélet</h3>
                         </div>
                         <p>Az elméleti oktatás helyszíne – a gyakorlati oktatáshoz és a vizsgáztatáshoz képest – rugalmasabb, hiszen egy városban akár több iskolát is találsz. Sőt, az autósiskolák gyakran szerveznek „kihelyezett" tantermi tanfolyamokat is. A tantermi tanfolyamok óraszámát jogszabály írja elő (B kategória esetén ez pl. huszonnyolc 45 perces órát jelent). A foglalkozásokon jelenlétedet aláírásoddal kell igazolnod, és a 10%-ot meghaladó hiányzást pótolni kell. A jelenléti ív okirat, ne hagyd magad rábeszélni a hamisításra!</p>

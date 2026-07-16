@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-lg-7 calc-content">
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/iskolavalt.webp')">
+                        <div class="calc-info-banner" style="background-image: url('/public/assets/depositphotos_490585954_xl.jpg')">
                             <h3 class="calc-info-title">Az autósiskola váltás (rejtett) költsége</h3>
                         </div>
                         <p>Sokszor előfordul, hogy egy tanuló másik autósiskolánál szeretné folytatni a tanulmányait. Ez teljesen természetes, hiszen a jogosítvány megszerzése nem rövid folyamat, közben lakóhely vagy munkahelyváltás is történhet, illetve az is előfordulhat, hogy egyszerűen elégedetlen vagy az autósiskolával, ahová elsőre beiratkoztál.</p>

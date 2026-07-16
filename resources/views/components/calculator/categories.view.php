@@ -14,27 +14,23 @@
                             <div class="vehicle-grid mb-4">
                                 <input type="radio" class="btn-check" name="category" id="cat-am" value="AM">
                                 <label class="vehicle-label" for="cat-am">
-                                    <img src="/public/assets/icons/am-inakt.png" alt="AM" width="70" height="70" style="object-fit:contain;">
+                                    <img src="/public/assets/icons/am-inakt.png" alt="AM" width="70" height="60" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="category" id="cat-a1" value="A1">
                                 <label class="vehicle-label" for="cat-a1">
-                                    <svg width="40" height="28" viewBox="0 0 68 42" fill="white"><ellipse cx="12" cy="35" rx="8" ry="6"/><ellipse cx="56" cy="35" rx="8" ry="6"/><path d="M20,35 L20,22 Q22,14 32,12 L44,12 L56,16 L56,35"/><path d="M32,12 L32,4 L40,4 L42,12"/><path d="M22,20 L44,18"/></svg>
-                                    A1
+                                    <img src="/public/assets/icons/a1-inakt.png" alt="A1" width="70" height="60" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="category" id="cat-a2" value="A2">
                                 <label class="vehicle-label" for="cat-a2">
-                                    <svg width="42" height="28" viewBox="0 0 70 42" fill="white"><ellipse cx="12" cy="35" rx="8" ry="6"/><ellipse cx="58" cy="35" rx="8" ry="6"/><path d="M20,35 L20,20 Q24,10 36,10 L48,10 L58,16 L58,35"/><path d="M34,10 L34,2 L44,2 L46,10"/><path d="M20,22 L46,20"/><path d="M24,14 Q30,8 40,8"/></svg>
-                                    A2
+                                    <img src="/public/assets/icons/a2-inakt.png" alt="A2" width="70" height="60" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="category" id="cat-a" value="A">
                                 <label class="vehicle-label" for="cat-a">
-                                    <svg width="44" height="28" viewBox="0 0 72 42" fill="white"><ellipse cx="12" cy="35" rx="8" ry="6"/><ellipse cx="60" cy="35" rx="8" ry="6"/><path d="M20,35 L18,24 Q20,12 34,10 L50,10 L60,18 L60,35"/><path d="M32,10 L30,2 L46,2 L48,10"/><path d="M18,26 L50,22"/><path d="M22,16 Q32,6 48,8"/></svg>
-                                    A
+                                    <img src="/public/assets/icons/a-inakt.png" alt="A" width="70" height="60" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="category" id="cat-b" value="B" checked>
                                 <label class="vehicle-label" for="cat-b">
-                                    <svg width="48" height="28" viewBox="0 0 76 44" fill="white"><ellipse cx="16" cy="36" rx="8" ry="6"/><ellipse cx="60" cy="36" rx="8" ry="6"/><path d="M8,36 L8,26 L14,14 L28,8 L50,8 L64,16 L68,26 L68,36"/><path d="M14,14 L28,10 L50,10 L62,18"/><rect x="16" y="12" width="16" height="10" rx="1"/><rect x="36" y="12" width="18" height="10" rx="1"/></svg>
-                                    B
+                                    <img src="/public/assets/icons/b-inakt.png" alt="B" width="70" height="60" style="object-fit:contain;">
                                 </label>
                             </div>
 
@@ -42,27 +38,24 @@
                             <div class="vehicle-grid mb-3">
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-am" value="AM">
                                 <label class="vehicle-label" for="prev-am">
-                                    <img src="/public/assets/icons/am-inakt.png" alt="AM" width="70" height="70" style="object-fit:contain;">
+                                    <img src="/public/assets/icons/am-inakt.png" alt="AM" width="70" height="60" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-a1" value="A1">
                                 <label class="vehicle-label" for="prev-a1">
-                                    <svg width="40" height="28" viewBox="0 0 68 42" fill="white"><ellipse cx="12" cy="35" rx="8" ry="6"/><ellipse cx="56" cy="35" rx="8" ry="6"/><path d="M20,35 L20,22 Q22,14 32,12 L44,12 L56,16 L56,35"/><path d="M32,12 L32,4 L40,4 L42,12"/><path d="M22,20 L44,18"/></svg>
-                                    A1
+                                    <img src="/public/assets/icons/a1-inakt.png" alt="A1" width="70" height="60" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-a2" value="A2">
                                 <label class="vehicle-label" for="prev-a2">
-                                    <svg width="42" height="28" viewBox="0 0 70 42" fill="white"><ellipse cx="12" cy="35" rx="8" ry="6"/><ellipse cx="58" cy="35" rx="8" ry="6"/><path d="M20,35 L20,20 Q24,10 36,10 L48,10 L58,16 L58,35"/><path d="M34,10 L34,2 L44,2 L46,10"/><path d="M20,22 L46,20"/></svg>
-                                    A2
+                                    <img src="/public/assets/icons/a2-inakt.png" alt="A2" width="70" height="60" style="object-fit:contain;">
+                                </label>
                                 </label>
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-a" value="A">
                                 <label class="vehicle-label" for="prev-a">
-                                    <svg width="44" height="28" viewBox="0 0 72 42" fill="white"><ellipse cx="12" cy="35" rx="8" ry="6"/><ellipse cx="60" cy="35" rx="8" ry="6"/><path d="M20,35 L18,24 Q20,12 34,10 L50,10 L60,18 L60,35"/><path d="M32,10 L30,2 L46,2 L48,10"/><path d="M18,26 L50,22"/></svg>
-                                    A
+                                    <img src="/public/assets/icons/a-inakt.png" alt="A" width="70" height="60" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-b" value="B">
                                 <label class="vehicle-label" for="prev-b">
-                                    <svg width="48" height="28" viewBox="0 0 76 44" fill="white"><ellipse cx="16" cy="36" rx="8" ry="6"/><ellipse cx="60" cy="36" rx="8" ry="6"/><path d="M8,36 L8,26 L14,14 L28,8 L50,8 L64,16 L68,26 L68,36"/><rect x="16" y="12" width="16" height="10" rx="1"/><rect x="36" y="12" width="18" height="10" rx="1"/></svg>
-                                    B
+                                    <img src="/public/assets/icons/b-inakt.png" alt="B" width="70" height="60" style="object-fit:contain;">
                                 </label>
                                 <input type="radio" class="btn-check" name="prev_category" id="prev-none" value="none" checked>
                                 <label class="vehicle-label" for="prev-none">
@@ -92,14 +85,14 @@
                 <div class="col-lg-7 calc-content">
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background: url('/public/assets/homepage/vegzettseg.jpg') 100% 30%/cover;">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_551388246_xl.jpg') center 75%/cover;">
                             <h3 class="calc-info-title">Kötelező iskolai végzettség</h3>
                         </div>
                         <p>Az „AM" kategória (segédmotoros kerékpár) kivételével előírás, hogy legalább alapfokú iskolai végzettséggel kell rendelkezned, amit a legújabb előírások szerint az első (általában elméleti) vizsgádon kell a megfelelő (általános iskolai vagy magasabb szintű) bizonyítvánnyal igazolnod.</p>
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background: url('/public/assets/aboutpage/about-2.jpg') center 60% /cover;">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_648095340_xl.jpg') center 50%/cover;">
                             <h3 class="calc-info-title">Amit mindenképpen érdemes megnézni</h3>
                         </div>
 
@@ -145,7 +138,7 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background: url('/public/assets/aboutpage/about-1.jpg') center 60% /cover;">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_275759776_xl.jpg') center 50%/cover;">
                             <h3 class="calc-info-title">Miben segít neked a jogsikalkulator.hu?</h3>
                         </div>
                         <p>Az autósiskola kiválasztása nem egyszerű feladat, hiszen nagy döntésről van szó, amit ráadásul a legtöbb ember csak egyszer tesz meg életében. Komoly pénzösszeg kiadásáról határozol, de ennél is fontosabb az, hogy a képzésen milyen elméleti és gyakorlati tudást kapsz.</p>
@@ -154,14 +147,14 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/akcios.webp')">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_75976327_xl.jpg') center 70%/cover">
                             <h3 class="calc-info-title">Akciós jogosítvány</h3>
                         </div>
                         <p>Örök igazság, hogy nem biztos, hogy az akciós a legkedvezőbb. Nincs azzal semmi gond, ha figyelsz a költségekre, sőt, a jogsikalkulátorral mindezt tudatosan megtervezheted. A meghirdetett képzési költség azonban nem minden esetben mutatja meg a jogosítvány megszerzésének tényleges díját. Így például előfordulhat, hogy a meghirdetett képzési ár kizárólag úgy érvényes, ha hétfőn reggel veszel részt az elméleti órán, vagy a kedvezményes ajánlattal hátrányba kerülsz, ha oktatóautót vagy oktatót lehet választani.</p>
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/kalkulator.webp')">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_202080554_xl.jpg') center 50%/cover">
                             <h3 class="calc-info-title">Jogsikalkulátor</h3>
                         </div>
                         <p>Jogsikalkulátorunkkal megmutatjuk, milyen tételekből áll össze a jogosítvány megszerzésének teljes költsége, akár az autósiskolánál fizeted akár máshol. Miután körülnéztél az iskolák között, és találtál neked tetszőt, érdemes tájékozódni az akciókban meghirdetett tanfolyamárak mellett az elméleti és a gyakorlati órák díjairól külön-külön is.</p>
@@ -169,7 +162,7 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/gyorsan.webp')">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_62262445_xl.jpg') center 30%/cover">
                             <h3 class="calc-info-title">Jogosítvány irreálisan gyorsan</h3>
                         </div>
                         <p>Szinte mindenki a lehető leggyorsabban szeretné megtanulni a vezetés elméleti és gyakorlati alapjait. Érdemes ismerni ezért a teljes tanulási folyamatot, hogy hol lehet, és azt is, hogy hol nem lehet gyorsítani.</p>
@@ -184,8 +177,7 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-header">
-                            <img src="/assets/homepage/beiratkozas.webp" alt="Beiratkozás" class="calc-info-img">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_116590388_xl.jpg') center 50%/cover">
                             <h3 class="calc-info-title">Beiratkozás</h3>
                         </div>
                         <p>Jelenleg több mint ezer autósiskola működik az országban, akik különböző árazási rendszert alkalmaznak és eltérő szolgáltatási színvonalat nyújtanak.</p>

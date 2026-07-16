@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-lg-7 calc-content">
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/elsosegely.webp')">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_182651054_xl.jpg') center 60%/cover">
                             <h3 class="calc-info-title">Elsősegély</h3>
                         </div>
                         <p>Amennyiben első jogosítványod megszerzésének futsz neki, le kell tenned a közúti elsősegélynyújtás vizsgát is. Magyarországon ezt a Magyar Vöröskereszt szervezi.</p>

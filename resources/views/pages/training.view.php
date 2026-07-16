@@ -16,7 +16,7 @@
         <div class="col-lg-8">
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/kepzesmenete/beiratkozas.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_116590388_xl.jpg') center 50%/cover">
                     <h2 class="calc-info-title">Beiratkozás</h2>
                 </div>
                 <p>Jelenleg több mint ezer autósiskola működik az országban, akik különböző árazási rendszert alkalmaznak és eltérő szolgáltatási színvonalat nyújtanak.</p>
@@ -25,7 +25,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/kepzesmenete/elmelet.jpg')">
+                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/depositphotos_767765320_xl.jpg')">
                     <h2 class="calc-info-title">Elmélet</h2>
                 </div>
                 <p>Az elméleti oktatás helyszíne – a gyakorlati oktatáshoz és a vizsgáztatáshoz képest – rugalmasabb, hiszen egy városban akár több iskolát is találsz. Sőt, az autósiskolák gyakran szerveznek „kihelyezett" tantermi tanfolyamokat is. A tantermi tanfolyamok óraszámát jogszabály írja elő (B kategória esetén ez pl. huszonnyolc 45 perces órát jelent). A foglalkozásokon jelenlétedet aláírásoddal kell igazolnod, és a 10%-ot meghaladó hiányzást pótolni kell. A jelenléti ív okirat, ne hagyd magad rábeszélni a hamisításra!</p>
@@ -37,7 +37,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/kepzesmenete/oktato.jpg')">
+                <div class="calc-info-banner mb-4">
                     <h2 class="calc-info-title">Oktató és autó választása</h2>
                 </div>
                 <p>Ha túl vagy a KRESZ vizsgán, már egyre több autósiskolánál Te is kiválaszthatod azt az oktatót és az autót, amelyiken vezetni szeretnél. Érdemes tudni, hogy jelenleg Magyarországon több képzett szakoktatóra lenne szükség ahhoz, hogy megfelelő tempóban tudják képezni a vezetni vágyókat, ezért az elméleti vizsga után akár hetek is eltelhetnek, mire a kiválasztott oktatóhoz és/vagy oktatóautóra kerülsz.</p>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/kepzesmenete/automata.jpg')">
+                <div class="calc-info-banner mb-4">
                     <h2 class="calc-info-title">Automata vagy kézi váltó</h2>
                 </div>
                 <p>Ma már több iskolában nem csak kézi váltós autón vezethetsz, hanem lehetőséged van automata váltós, sőt, akár elektromos oktatóautón is tanulni. A vezetői engedély szempontjából az elektromos autó is automata váltósnak minősül.</p>
@@ -55,7 +55,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/kepzesmenete/mennyit-vezetsz.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_393408270_xl.jpg') center 30% / cover">
                     <h2 class="calc-info-title">Mennyit fogsz vezetni?</h2>
                 </div>
                 <p>A gyakorlati képzés minimális óraszáma hatóságilag megállapított, és a megszerezni kívánt jogosítvány kategóriája szerint változik. A gyakorlati vezetési órák előírt időtartama 50 perc. Mindig ragaszkodj tehát a vezetési karton és az 50 perc kitöltéséhez is!</p>
@@ -64,7 +64,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/kepzesmenete/vezetesilap.jpg')">
+                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/depositphotos_310926564_xl.jpg')">
                     <h2 class="calc-info-title">Vezetési karton</h2>
                 </div>
                 <p>A gyakorlati oktatás legfontosabb dokumentuma a vezetési karton, melyen neked, mint tanulónak a gyakorlati vezetési óra elején és végén is aláírásoddal kell igazolni az oktatás tényét. Ez azért is fontos, mert a jogszabályok szerint ez alatt az idő alatt a szakoktatód az oktató jármű felelős vezetője.</p>
@@ -72,21 +72,21 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/kepzesmenete/oradij.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_89998860_xl.jpg') center 60% / cover">
                     <h2 class="calc-info-title">Óradíj</h2>
                 </div>
                 <p>A gyakorlati óradíjnak nincs hatóságilag megállapított egységes ára, sőt, egy iskolán belül is alkalmazhatnak különböző óradíjakat az oktató személyétől, az oktatójármű fajtájától (pl. kézi váltós vagy automata), típusától vagy az oktatás időpontjától (pl. hétköznap vagy hétvége) függően. Ez tehát az autósiskola döntése. Fontos viszont az átláthatóság, vagyis hogy pontosan tudd – mégpedig előre – hogy milyen szolgáltatást kapsz és annak mi az ára.</p>
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/kepzesmenete/hol-vezetsz.jpg')">
+                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/depositphotos_396424460_xl.jpg')">
                     <h2 class="calc-info-title">Hol fogsz vezetni?</h2>
                 </div>
                 <p>A gyakorlati oktatás – és főleg a vizsgáztatás – helyszíne nem tetszőleges: a szükséges forgalmi infrastruktúra, forgalomsűrűség és forgalmi helyzetek miatt a nagyobb városokra koncentrálódik. A B kategóriás képzés egy részében az oktatód gyakorolhat veled rutinpályán is, de ez nem kötelező. A motoros kategóriáknál viszont – a járműkezelési vizsga és az arra történő felkészülés érdekében – mindenképpen megfordulsz majd rajta.</p>
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/homepage/first-aid.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_182651054_xl.jpg') center 60%/cover">
                     <h2 class="calc-info-title">Elsősegély</h2>
                 </div>
                 <p>Amennyiben első jogosítványod megszerzésének futsz neki, le kell tenned a közúti elsősegélynyújtás vizsgát is. Magyarországon ezt a Magyar Vöröskereszt szervezi.</p>
@@ -94,7 +94,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/kepzesmenete/vizsgak.jpg')">
+                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/depositphotos_203803070_xl.jpg')">
                     <h2 class="calc-info-title">A vizsgák és a jogosítvány</h2>
                 </div>
                 <p>Vizsgára jelentkezés: ezt általában az autósiskola, gyakorlati vizsga esetén esetleg maga az oktatód végzi. Ha úgy alakulna, hogy nem sikerül az elméleti vizsgád, akkor az elméleti pótvizsgá(k)ra önállóan is jelentkezhetsz, általában rögtön a vizsga helyszínén működő ügyfélszolgálaton.</p>

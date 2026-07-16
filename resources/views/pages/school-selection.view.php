@@ -16,7 +16,7 @@
         <div class="col-lg-8">
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/iskolavalasztas/megnezni.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_648095340_xl.jpg') center 50%/cover">
                     <h2 class="calc-info-title">Amit mindenképpen érdemes megnézni</h2>
                 </div>
 
@@ -62,7 +62,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/iskolavalasztas/meroszamok.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_144796631_xl.jpg') center 100%/cover">
                     <h2 class="calc-info-title">VSM, ÁKÓ és KK – Sokatmondó mérőszámok</h2>
                 </div>
                 <p>A tanulók könnyebb tájékozódása érdekében a közlekedési hatóság 2014 óta kötelezi az autósiskolákat arra, hogy minden lezárt negyedév végén három fontos mérőszámot közzétegyenek. Ezeket az autósiskolák honlapján találod „képzési mutatók", „fogyasztóvédelmi mutatók" vagy „mérőszámok" címszó alatt.</p>
@@ -72,7 +72,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/iskolavalasztas/vsm.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_13453254_xl.jpg') center 60%/cover">
                     <h2 class="calc-info-title">VSM = Vizsga Sikerességi Mutató</h2>
                 </div>
                 <p>Azt mutatja meg, hogy egy autósiskolánál a vizsgára jelentett tanulók hány százaléka tett sikeres vizsgát. Tehát az iskola tanulóinak átlagos vizsgasikerességét megmutatja. Százalékos mutató, külön számolják a fontosabb kategóriákra, azon belül az elméleti és gyakorlati vizsgákra, minden negyedévben. Értelemszerűen minél közelebb van az értéke a 100%-hoz, annál sikeresebben vizsgáznak az ott vezetni tanulók.</p>
@@ -80,7 +80,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/iskolavalasztas/ako.jpg')">
+                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/depositphotos_315565696_xl.jpg')">
                     <h2 class="calc-info-title">ÁKÓ = Átlagos Képzési Óraszám</h2>
                 </div>
                 <p>A kötelezően előírt gyakorlati vezetési órák száma (például „B" kategória esetén a 29 óra) csak azt a minimumot jelenti, ami alatt elvileg meg lehet szerezni a szükséges képességeket. Az ÁKÓ ezzel szemben azt mutatja meg Neked, hogy az iskolában ténylegesen mennyi gyakorlati órát vesznek a tanulók (a kötelező óraszámhoz képest), amíg sikeres vizsgát nem tesznek.</p>
@@ -95,7 +95,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/iskolavalasztas/kk.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_21086287_xl.jpg') center 15%/cover">
                     <h2 class="calc-info-title">KK = Képzési Költség</h2>
                 </div>
                 <p>Azt mutatja meg Neked, hogy a képzés teljes időtartama alatt átlagosan összesen mennyit fizet egy tanuló. Fontos, hogy ebbe bizonyos költségeket nem számítanak bele (pl. az autósiskola által felszámított adminisztrációs vagy kezelési költséget, az esetleges pótvizsgák díját, az orvosi alkalmassági vizsgálat díját, az elsősegélynyújtási tanfolyam és vizsga díját, a vezetői engedély kiállításának esetleges díját). Ezt érdemes mind az autósiskolák összehasonlításánál, mind a jogosítványszerzés várható teljes költéségének meghatározásánál figyelembe venni.</p>

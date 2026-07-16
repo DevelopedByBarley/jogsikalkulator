@@ -17,7 +17,7 @@
 
             <!-- Szekció 1 -->
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background: url('/public/assets/homepage/vegzettseg.jpg') 100% 30%/cover;">
+                <div class="calc-info-banner mb-4">
                     <h2 class="calc-info-title">Miért készítettük a jogsikalkulator.hu oldalt?</h2>
                 </div>
                 <p>A Szakoktatók Országos Érdekképviseleti Egyesületének (SZAKOE) célja, hogy hozzájáruljon a hazai járművezető-képzés színvonalának emeléséhez, ezért feladatunknak tekintjük a leendő tanulók minél pontosabb tájékoztatását is.</p>
@@ -27,7 +27,7 @@
 
             <!-- Szekció 2 -->
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/assets/homepage/miben-segit.webp')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_275759776_xl.jpg') center 50%/cover">
                     <h2 class="calc-info-title">Miben segít neked a jogsikalkulator.hu?</h2>
                 </div>
                 <p>Az autósiskola kiválasztása nem egyszerű feladat, hiszen nagy döntésről van szó, amit ráadásul a legtöbb ember csak egyszer tesz meg életében. Komoly pénzösszeg kiadásáról határozol, de ennél is fontosabb az, hogy a képzésen milyen elméleti és gyakorlati tudást kapsz ahhoz, hogy a jogosítványod megszerzését követően valóban biztonságosan tudj vezetni.</p>

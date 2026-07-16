@@ -16,14 +16,14 @@
         <div class="col-lg-8">
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/tippek/akcios.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_75976327_xl.jpg') center 70%/cover">
                     <h2 class="calc-info-title">Akciós jogosítvány</h2>
                 </div>
                 <p>Örök igazság, hogy nem biztos, hogy az akciós a legkedvezőbb. Nincs azzal semmi gond, ha figyelsz a költségekre, sőt, a jogsikalkulátorral mindezt tudatosan megtervezheted. A meghirdetett képzési költség azonban nem minden esetben mutatja meg a jogosítvány megszerzésének tényleges díját. Így például előfordulhat, hogy a meghirdetett képzési ár kizárólag úgy érvényes, ha hétfőn reggel veszel részt az elméleti órán, vagy a kedvezményes ajánlattal hátrányba kerülsz, ha oktatóautót vagy oktatót lehet választani, és a terveidhez képest hónapokkal később tudod befejezni a tanfolyamot.</p>
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/tippek/gyorsan.jpg')">
+                <div class="calc-info-banner mb-4" style="background: url('/public/assets/depositphotos_62262445_xl.jpg') center 30%/cover">
                     <h2 class="calc-info-title">Jogosítvány irreálisan gyorsan</h2>
                 </div>
                 <p>Szinte mindenki a lehető leggyorsabban szeretné megtanulni a vezetés elméleti és gyakorlati alapjait. Érdemes ismerni ezért a teljes tanulási folyamatot, hogy hol lehet, és azt is, hogy hol nem lehet gyorsítani.</p>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/tippek/lassu.jpg')">
+                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/depositphotos_121226864_xl.jpg')">
                     <h2 class="calc-info-title">Túl lassú tempó</h2>
                 </div>
                 <p>A jogosítvány megszerzésének maximális időkorlátja is van, ugyanis a jogszabályok nem engedik meg, hogy a képzési folyamat tetszőlegesen hosszúra nyúljon. Az elméleti tanfolyamod megkezdésétől számítva – tantermi tanfolyam esetén ez az első foglalkozás időpontja, e‑learning képzés esetén pedig az a pillanat, amikor először belépsz az elektronikus tananyagba – 9 hónapon belül elméleti vizsgát kell tenned, és szintén az elméleti tanfolyam megkezdésétől számítva legkésőbb 12 hónapon belül rendelkezned kell sikeres elméleti vizsgával. Ezt követően pedig két éved van arra, hogy gyakorlati képzésed sikeres vizsgával befejezd.</p>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/tippek/kedvezmeny.jpg')">
+                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/depositphotos_278094076_xl.jpg')">
                     <h2 class="calc-info-title">Kedvezményes gyakorlati óradíj vagy mégsem?</h2>
                 </div>
                 <p>Sok autósiskola szereti felkelteni a tanulók érdeklődését kedvezményes gyakorlati óradíjakkal.</p>
@@ -60,7 +60,7 @@
             </div>
 
             <div class="about-block">
-                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/tippek/iskolavalt.jpg')">
+                <div class="calc-info-banner mb-4" style="background-image: url('/public/assets/depositphotos_490585954_xl.jpg')">
                     <h2 class="calc-info-title">Az autósiskola váltás (rejtett) költsége</h2>
                 </div>
                 <p>Sokszor előfordul, hogy egy tanuló másik autósiskolánál szeretné folytatni a tanulmányait. Ez teljesen természetes, hiszen a jogosítvány megszerzése nem rövid folyamat, közben lakóhely vagy munkahelyváltás is történhet, illetve az is előfordulhat, hogy egyszerűen elégedetlen vagy az autósiskolával, ahová elsőre beiratkoztál.</p>

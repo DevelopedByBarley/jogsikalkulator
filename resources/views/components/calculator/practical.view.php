@@ -63,7 +63,7 @@
                 <div class="col-lg-7 calc-content">
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/vezetesilap.webp')">
+                        <div class="calc-info-banner" style="background-image: url('/public/assets/depositphotos_310926564_xl.jpg')">
                             <h3 class="calc-info-title">Vezetési karton</h3>
                         </div>
                         <p>A gyakorlati oktatás legfontosabb dokumentuma a vezetési karton, melyen neked, mint tanulónak a gyakorlati vezetési óra elején és végén is aláírásoddal kell igazolni az oktatás tényét. Ez azért is fontos, mert a jogszabályok szerint ez alatt az idő alatt a szakoktatód az oktató jármű felelős vezetője.</p>
@@ -71,7 +71,7 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/kedvezmeny.webp')">
+                        <div class="calc-info-banner" style="background-image: url('/public/assets/depositphotos_278094076_xl.jpg')">
                             <h3 class="calc-info-title">Kedvezményes gyakorlati óradíj vagy mégsem?</h3>
                         </div>
                         <p>Sok autósiskola szereti felkelteni a tanulók érdeklődését kedvezményes gyakorlati óradíjakkal.</p>
@@ -85,7 +85,7 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/mennyit-vezetsz.webp')">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_393408270_xl.jpg') center 30% / cover">
                             <h3 class="calc-info-title">Mennyit fogsz vezetni?</h3>
                         </div>
                         <p>A gyakorlati képzés minimális óraszáma hatóságilag megállapított, és a megszerezni kívánt jogosítvány kategóriája szerint változik. A gyakorlati vezetési órák előírt időtartama 50 perc. Mindig ragaszkodj tehát a vezetési karton és az 50 perc kitöltéséhez is!</p>
@@ -94,14 +94,14 @@
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/hol-vezetsz.webp')">
+                        <div class="calc-info-banner" style="background-image: url('/public/assets/depositphotos_396424460_xl.jpg')">
                             <h3 class="calc-info-title">Hol fogsz vezetni?</h3>
                         </div>
                         <p>A gyakorlati oktatás – és főleg a vizsgáztatás – helyszíne nem tetszőleges: a szükséges forgalmi infrastruktúra, forgalomsűrűség és forgalmi helyzetek miatt a nagyobb városokra koncentrálódik. A B kategóriás képzés egy részében az oktatód gyakorolhat veled rutinpályán is, de ez nem kötelező. A motoros kategóriáknál viszont – a járműkezelési vizsga és az arra történő felkészülés érdekében – mindenképpen megfordulsz majd rajta.</p>
                     </div>
 
                     <div class="calc-info-block">
-                        <div class="calc-info-banner" style="background-image: url('/assets/homepage/oradij.webp')">
+                        <div class="calc-info-banner" style="background: url('/public/assets/depositphotos_89998860_xl.jpg') center 60% / cover">
                             <h3 class="calc-info-title">Óradíj</h3>
                         </div>
                         <p>A gyakorlati óradíjnak nincs hatóságilag megállapított egységes ára, sőt, egy iskolán belül is alkalmazhatnak különböző óradíjakat az oktató személyétől, az oktatójármű fajtájától (pl. kézi váltós vagy automata), típusától vagy az oktatás időpontjától (pl. hétköznap vagy hétvége) függően. Ez tehát az autósiskola döntése. Fontos viszont az átláthatóság, vagyis hogy pontosan tudd – mégpedig előre – hogy milyen szolgáltatást kapsz és annak mi az ára.</p>

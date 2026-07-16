@@ -1,7 +1,7 @@
 #hero {
     position: relative;
     min-height: calc(100vh - 150px);
-    background-image: url('/public/assets/main-image.jpg');
+    background-image: url('/public/assets/depositphotos_8148691_xl.jpg');
     background-size: cover;
     background-position: center;
 }
