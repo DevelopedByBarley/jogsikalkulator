@@ -68,7 +68,7 @@
                 <p>A tanulók könnyebb tájékozódása érdekében a közlekedési hatóság 2014 óta kötelezi az autósiskolákat arra, hogy minden lezárt negyedév végén három fontos mérőszámot közzétegyenek. Ezeket az autósiskolák honlapján találod „képzési mutatók", „fogyasztóvédelmi mutatók" vagy „mérőszámok" címszó alatt.</p>
                 <p>A Vizsga Sikerességi Mutatót (VSM) és az Átlagos Képzési Óraszámot (ÁKÓ) a közlekedési hatóság hivatalosan is közzéteszi negyedévente. Az autósiskolának pedig mindhárom számot – tehát az általa kiszámított Képzési Költséget (KK) is – fel kell tüntetnie a honlapján, illetve reklámjaiban.</p>
                 <p>Ha az adott autósiskolánál a mutatószámok elavultak vagy meg sem találod azokat, esetleg az iskolának honlapja sincs, az már önmagában erős figyelmeztető jel arra, hogy nem biztos, hogy jó helyen jársz.</p>
-                <p><a href="#" class="fw-semibold" style="color:#30B460;">Autósiskolák hivatalos jegyzéke (ÁKÓ - VSM) &rsaquo;&rsaquo;</a></p>
+                <p><a href="https://vizsgakozpont.hu/ako_vsm" target="_blank" rel="noopener" class="fw-semibold" style="color:#30B460;">Autósiskolák hivatalos jegyzéke (ÁKÓ - VSM) &rsaquo;&rsaquo;</a></p>
             </div>
 
             <div class="about-block">
@@ -76,7 +76,7 @@
                     <h2 class="calc-info-title">VSM = Vizsga Sikerességi Mutató</h2>
                 </div>
                 <p>Azt mutatja meg, hogy egy autósiskolánál a vizsgára jelentett tanulók hány százaléka tett sikeres vizsgát. Tehát az iskola tanulóinak átlagos vizsgasikerességét megmutatja. Százalékos mutató, külön számolják a fontosabb kategóriákra, azon belül az elméleti és gyakorlati vizsgákra, minden negyedévben. Értelemszerűen minél közelebb van az értéke a 100%-hoz, annál sikeresebben vizsgáznak az ott vezetni tanulók.</p>
-                <p><a href="#" class="fw-semibold" style="color:#30B460;">Autósiskolák hivatalos jegyzéke (VSM) &rsaquo;&rsaquo;</a></p>
+                <p><a href="https://vizsgakozpont.hu/ako_vsm" target="_blank" rel="noopener" class="fw-semibold" style="color:#30B460;">Autósiskolák hivatalos jegyzéke (VSM) &rsaquo;&rsaquo;</a></p>
             </div>
 
             <div class="about-block">
@@ -91,7 +91,7 @@
                     <li>Érdemes több helyi autósiskolát is összehasonlítani, mert regionális eltérések is lehetnek. Vannak olyan megyék, ahol az összes autósiskola átlagos ÁKÓ mutatója eltér az országos átlagtól.</li>
                     <li>A folyamatosan 100%-os vagy azt nagyon megközelítő értéket érdemes némi fenntartással kezelni, különösen akkor, ha a gyakorlati vizsgasikerességi mutató (VSM) lényegesen elmarad a 100%-tól. Ilyenkor ugyanis előfordulhat, hogy a gyakorlati órák egy részét nem megfelelően dokumentálják.</li>
                 </ul>
-                <p><a href="#" class="fw-semibold" style="color:#30B460;">Autósiskolák hivatalos jegyzéke (ÁKÓ) &rsaquo;&rsaquo;</a></p>
+                <p><a href="https://vizsgakozpont.hu/ako_vsm" target="_blank" rel="noopener" class="fw-semibold" style="color:#30B460;">Autósiskolák hivatalos jegyzéke (ÁKÓ) &rsaquo;&rsaquo;</a></p>
             </div>
 
             <div class="about-block">

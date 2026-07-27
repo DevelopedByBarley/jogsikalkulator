@@ -36,6 +36,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/iskolavalasztas">Iskolaválasztás</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link position-relative" href="/osszehasonlitas" id="compare-nav-link">
+                        Összehasonlítás
+                        <span class="badge rounded-pill bg-success d-none" id="compare-nav-count">0</span>
+                    </a>
+                </li>
             </ul>
 
             <!-- Right side icons + logout -->

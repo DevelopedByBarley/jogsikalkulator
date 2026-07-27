@@ -57,6 +57,56 @@
                     </div>
                 </div>
 
+                <!-- ── Autósiskola mutatói (VSM / ÁKÓ) ── -->
+                <div class="cat-card mt-3" id="school-metrics-card" style="background: #d9f0dc;">
+                    <div class="p-4">
+                        <h3 class="fw-semibold mb-3" style="color: #4a5568; font-size: 1.35rem;">
+                            Válassz autósiskolát
+                        </h3>
+
+                        <div class="position-relative">
+                            <input type="text"
+                                   id="school-search"
+                                   class="form-control border-0 py-2"
+                                   autocomplete="off"
+                                   placeholder="Kezdd el gépelni az autósiskola nevét…"
+                                   aria-label="Autósiskola keresése">
+                            <div id="school-suggestions"
+                                 class="list-group position-absolute w-100 shadow-sm d-none"
+                                 style="z-index: 20; max-height: 260px; overflow-y: auto;"></div>
+                        </div>
+
+                        <div id="school-metrics-empty" class="small mt-3 mb-0" style="color: #6b7280;">
+                            Válassz ki egy iskolát, és megmutatjuk a hatóság által közzétett mutatóit.
+                        </div>
+
+                        <div id="school-metrics-result" class="d-none mt-3">
+                            <div class="fw-semibold pb-2 mb-2 border-bottom"
+                                 style="color: #2f6b3a; font-size: 0.9rem; border-color: #a8d5b0 !important;"
+                                 id="school-metrics-title">
+                                Autósiskola mutatói a választott kategóriában
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center py-2 border-bottom"
+                                 style="border-color: #a8d5b0 !important;">
+                                <span style="color: #4a5568;">Vizsga Sikerességi Mutató (VSM) - Elmélet</span>
+                                <span class="fw-bold text-nowrap ps-3" style="color: #2f6b3a;" id="metric-vsm-theory">–</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2 border-bottom"
+                                 style="border-color: #a8d5b0 !important;">
+                                <span style="color: #4a5568;">Vizsga Sikerességi Mutató (VSM) - Forgalom</span>
+                                <span class="fw-bold text-nowrap ps-3" style="color: #2f6b3a;" id="metric-vsm-traffic">–</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <span style="color: #4a5568;">Átlagos Képzési Óraszám (ÁKÓ) - Gyakorlat</span>
+                                <span class="fw-bold text-nowrap ps-3" style="color: #2f6b3a;" id="metric-ako-practical">–</span>
+                            </div>
+                        </div>
+
+                        <div id="school-metrics-message" class="small mt-3 mb-0 d-none" style="color: #9a3412;"></div>
+                    </div>
+                </div>
+
                 <div class="d-flex gap-3 mt-3">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#saveCalculationModal">
                         Kalkuláció mentése
@@ -92,7 +142,7 @@
                     <p>A tanulók könnyebb tájékozódása érdekében a közlekedési hatóság 2014 óta kötelezi az autósiskolákat arra, hogy minden lezárt negyedév végén három fontos mérőszámot közzétegyenek. Ezeket az autósiskolák honlapján találod „képzési mutatók", „fogyasztóvédelmi mutatók" vagy „mérőszámok" címszó alatt.</p>
                     <p>A Vizsga Sikerességi Mutatót (VSM) és az Átlagos Képzési Óraszámot (ÁKÓ) a közlekedési hatóság hivatalosan is közzéteszi negyedévente. Az autósiskolának pedig mindhárom számot – tehát az általa kiszámított Képzési Költséget (KK) is – fel kell tüntetnie a honlapján, illetve reklámjaiban.</p>
                     <p>Ha az adott autósiskolánál a mutatószámok elavultak vagy meg sem találod azokat, esetleg az iskolának honlapja sincs, az már önmagában erős figyelmeztető jel.</p>
-                    <p><a href="#" class="fw-semibold text-success">Autósiskolák hivatalos jegyzéke (ÁKÓ - VSM) &rsaquo;&rsaquo;</a></p>
+                    <p><a href="https://vizsgakozpont.hu/ako_vsm" target="_blank" rel="noopener" class="fw-semibold text-success">Autósiskolák hivatalos jegyzéke (ÁKÓ - VSM) &rsaquo;&rsaquo;</a></p>
                 </div>
 
                 <div class="calc-info-block">
@@ -100,7 +150,7 @@
                         <h3 class="calc-info-title">VSM = Vizsga Sikerességi Mutató</h3>
                     </div>
                     <p>Azt mutatja meg, hogy egy autósiskolánál a vizsgára jelentett tanulók hány százaléka tett sikeres vizsgát. Tehát az iskola tanulóinak átlagos vizsgasikerességét megmutatja. Százalékos mutató, külön számolják a fontosabb kategóriákra, azon belül az elméleti és gyakorlati vizsgákra, minden negyedévben. Értelemszerűen minél közelebb van az értéke a 100%-hoz, annál sikeresebben vizsgáznak az ott vezetni tanulók.</p>
-                    <p><a href="#" class="fw-semibold text-success">Autósiskolák hivatalos jegyzéke (VSM) &rsaquo;&rsaquo;</a></p>
+                    <p><a href="https://vizsgakozpont.hu/ako_vsm" target="_blank" rel="noopener" class="fw-semibold text-success">Autósiskolák hivatalos jegyzéke (VSM) &rsaquo;&rsaquo;</a></p>
                 </div>
 
                 <div class="calc-info-block">
@@ -115,7 +165,7 @@
                         <li>Érdemes több helyi autósiskolát is összehasonlítani, mert regionális eltérések is lehetnek.</li>
                         <li>A folyamatosan 100%-os vagy azt nagyon megközelítő értéket érdemes némi fenntartással kezelni, különösen akkor, ha a gyakorlati vizsgasikerességi mutató (VSM) lényegesen elmarad a 100%-tól.</li>
                     </ul>
-                    <p><a href="#" class="fw-semibold text-success">Autósiskolák hivatalos jegyzéke (ÁKÓ) &rsaquo;&rsaquo;</a></p>
+                    <p><a href="https://vizsgakozpont.hu/ako_vsm" target="_blank" rel="noopener" class="fw-semibold text-success">Autósiskolák hivatalos jegyzéke (ÁKÓ) &rsaquo;&rsaquo;</a></p>
                 </div>
 
             </div>

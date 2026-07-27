@@ -268,7 +268,7 @@
                 Eredmény
             </a>
 
-            <a href="#osszehasonlitas" class="calc-nav-item position-relative">
+            <a href="/osszehasonlitas" class="calc-nav-item position-relative" id="compare-calcnav-link">
                 <div class="position-relative d-inline-block">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="60.693px" height="60.693px" viewBox="0 0 56.7 56.7" style="enable-background:new 0 0 56.7 56.7;" xml:space="preserve">

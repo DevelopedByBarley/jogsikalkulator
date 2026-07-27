@@ -57,10 +57,20 @@ $router->get('/iskolavalasztas', fn() => page('pages/school-selection', ['title'
 ]]]));
 
 
+$router->get('/osszehasonlitas', fn() => page('pages/compare', ['title' => 'Összehasonlítás', 'navigation' => ['previous' => [
+    'name' => 'Jogsikalkulátor',
+    'url' => '/'
+], 'next' => [
+    'name' => null,
+    'url' => null
+]]]));
+
+
 require __DIR__ . '/posts.php';
 require __DIR__ . '/admin/auth.php';
 require __DIR__ . '/admin/settings.php';
 require __DIR__ . '/admin/dashboard.php';
+require __DIR__ . '/admin/school-metrics.php';
 
 require __DIR__ . '/user/auth.php';
 require __DIR__ . '/api.php';

@@ -103,6 +103,13 @@ function render() {
     setText('theoretical_training_price_display', fmtFt(data.theoritical.training_price));
     setText('theoretical_exam_fee_display', fmtFt(data.theoritical.exam_fee));
 
+    // Ha nincs elméleti képzési díj (pl. motoros előélet miatti felmentés),
+    // a képzési díj csúszkát letiltjuk, hogy ne lehessen "varázsból" díjat felhúzni.
+    const theoryPriceSlider = document.getElementById('theoretical_training_price_slider');
+    if (theoryPriceSlider) {
+        theoryPriceSlider.disabled = (parseInt(data.theoritical.training_price) || 0) === 0;
+    }
+
     // Gyakorlat
     setText('practical_basic_price_display', fmtFt(data.practical.training_basic_hours_price));
     setText('practical_basic_hours_display', data.practical.training_basic_hours + ' óra');
@@ -159,6 +166,16 @@ function render() {
     } else {
         hide('age-requirements-section');
     }
+}
+
+/**
+ * Az aktuális kalkuláció pillanatképe az összehasonlításhoz.
+ *
+ * Mély másolatot adunk vissza, hogy a mentett tétel ne változzon,
+ * ha a felhasználó utána még tekergeti a csúszkákat.
+ */
+export function snapshotCalculation() {
+    return JSON.parse(JSON.stringify(data));
 }
 
 function updatePracticalSliderMax(category) {

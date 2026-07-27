@@ -56,4 +56,21 @@ class Session
   {
     $_SESSION = [];
   }
+
+  /**
+   * A session írásának lezárása és a fájlzár azonnali feloldása.
+   *
+   * A session_start() kizárólagos zárat tart a session fájlon a kérés
+   * végéig, ezért ugyanattól a felhasználótól érkező PÁRHUZAMOS kérések
+   * (pl. az élő kereső egymást követő AJAX hívásai) egymásra várnak, és
+   * 30 mp után timeoutolnak. A csak-olvasó végpontok ezzel a kérés elején
+   * elengedik a zárat – a $_SESSION tömb utána is olvasható marad, csak
+   * új írás nem íródik vissza.
+   */
+  public static function close(): void
+  {
+    if (session_status() === PHP_SESSION_ACTIVE) {
+      session_write_close();
+    }
+  }
 }

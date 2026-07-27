@@ -368,8 +368,8 @@
   "A2-A1-less_2": {
     "medical_price": 0,
     "theoritical": {
-      "training_price": 0,
-      "exam_fee": 0
+      "training_price": 20000,
+      "exam_fee": 12700
     },
     "practical": {
       "training_basic_hours_price": 5000,
@@ -457,8 +457,8 @@
   "A-A1-less_2": {
     "medical_price": 0,
     "theoritical": {
-      "training_price": 0,
-      "exam_fee": 0
+      "training_price": 20000,
+      "exam_fee": 12700
     },
     "practical": {
       "training_basic_hours_price": 5000,
@@ -515,8 +515,8 @@
   "A-A2-less_2": {
     "medical_price": 0,
     "theoritical": {
-      "training_price": 0,
-      "exam_fee": 0
+      "training_price": 20000,
+      "exam_fee": 12700
     },
     "practical": {
       "training_basic_hours_price": 5000,

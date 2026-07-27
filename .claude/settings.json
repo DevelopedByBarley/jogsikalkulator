@@ -6,7 +6,27 @@
       "Bash(python -c \"import sys,json; data=json.load\\(sys.stdin\\); print\\(json.dumps\\(list\\(data.keys\\(\\)\\), indent=2\\)\\)\")",
       "Bash(Get-Content \"c:\\\\xampp\\\\htdocs\\\\jogsikalkulator\\\\database\\\\json\\\\category-rules.json\")",
       "Bash(Select-Object -First 30)",
-      "Bash(node -e \"const fs=require\\('fs'\\); try{require\\('./resources/js/home.js'\\)}catch\\(e\\){console.log\\(e.message\\)}\")"
+      "Bash(node -e \"const fs=require\\('fs'\\); try{require\\('./resources/js/home.js'\\)}catch\\(e\\){console.log\\(e.message\\)}\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('database/json/category-rules.json'\\)\\); print\\('kulcsok:', list\\(d.keys\\(\\)\\)\\)\")",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('database/json/category-rules.json'\\)\\); print\\(json.dumps\\(d['B-none'], indent=2, ensure_ascii=False\\)\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3)",
+      "Bash(grep -rn 'Session::\\\\|$_SESSION\\\\|flash\\\\|toast\\\\|alert\\(' app/Http/Controllers/API/)",
+      "Bash(rm -f public/_locktest.php /tmp/jar*.txt /tmp/ctrl.bak /tmp/ctrl.bak2 /tmp/srv2.log)",
+      "Bash(pkill -f \"127.0.0.1:8877\")",
+      "Bash(pkill -f \"127.0.0.1:8878\")",
+      "Bash(node --check /Applications/XAMPP/xamppfiles/htdocs/jogsikalkulator/resources/js/app.js)",
+      "Bash(unzip -o \"jogsikalkulátor módosítások 2026.07.20 \\(2\\).docx\" -d /private/tmp/claude-501/-Applications-XAMPP-xamppfiles-htdocs-jogsikalkulator/1f475b72-cff5-49ff-9758-1028d81a409a/scratchpad/docx_extract)",
+      "Bash(python3 -c \"import sys,re; c=sys.stdin.read\\(\\); [print\\(m\\) for m in re.findall\\(r'Target=\\\\\"\\([^\\\\\"]+\\)\\\\\"[^>]*TargetMode=\\\\\"External\\\\\"', c\\)]\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost/jogsikalkulator/)",
+      "Bash(pip3 show *)",
+      "Bash(python3 -c \"import pypdf\")",
+      "Bash(python3 -c \"import fitz\")",
+      "Bash(python3 -c \"import pdfplumber\")",
+      "Bash(pip3 install *)",
+      "Bash(python3 -m venv /private/tmp/claude-501/-Applications-XAMPP-xamppfiles-htdocs-jogsikalkulator/1f475b72-cff5-49ff-9758-1028d81a409a/scratchpad/pdfenv)",
+      "Bash(/private/tmp/claude-501/-Applications-XAMPP-xamppfiles-htdocs-jogsikalkulator/1f475b72-cff5-49ff-9758-1028d81a409a/scratchpad/pdfenv/bin/python -c ' *)",
+      "Bash(/private/tmp/claude-501/-Applications-XAMPP-xamppfiles-htdocs-jogsikalkulator/1f475b72-cff5-49ff-9758-1028d81a409a/scratchpad/pdfenv/bin/python /private/tmp/claude-501/-Applications-XAMPP-xamppfiles-htdocs-jogsikalkulator/1f475b72-cff5-49ff-9758-1028d81a409a/scratchpad/check_glyphs.py)"
     ]
   }
 }

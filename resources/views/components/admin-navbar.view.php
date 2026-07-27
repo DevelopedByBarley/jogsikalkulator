@@ -64,6 +64,26 @@
                 </li> -->
                 <li class="nav-item">
                     <a class="nav-link px-3 py-2 tw-rounded-lg fw-medium admin-nav-link"
+                       href="/admin/iskola-mutatok"
+                       style="color: #94a3b8; font-size: 0.875rem; transition: all 0.2s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="me-1 mb-1" viewBox="0 0 16 16">
+                            <path d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
+                        </svg>
+                        Iskola mutatók
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 py-2 tw-rounded-lg fw-medium admin-nav-link"
+                       href="/admin/iskola-mutatok/bongeszes"
+                       style="color: #94a3b8; font-size: 0.875rem; transition: all 0.2s;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="me-1 mb-1" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                        Adatok böngészése
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 py-2 tw-rounded-lg fw-medium admin-nav-link"
                        href="/admin/settings"
                        style="color: #94a3b8; font-size: 0.875rem; transition: all 0.2s;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="me-1 mb-1" viewBox="0 0 16 16">

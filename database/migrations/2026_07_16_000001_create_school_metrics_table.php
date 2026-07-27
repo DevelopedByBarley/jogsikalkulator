@@ -19,20 +19,28 @@ return new class implements Migration
             $table->bigIncrements('id');
 
             $table->string('school_name');
-            // Normalizált név a párosításhoz és kereséshez (kisbetűs, ékezet/szóköz tisztítva)
+            // Normalizált név (kisbetűs, szóközök összevonva) — kereséshez / másodlagos párosításhoz
             $table->string('school_key')->index();
+            // A fájlbeli "Azonosító" oszlop (pl. 0674) — elsődleges párosítás VSM↔ÁKÓ között
+            $table->string('school_ext_id', 50)->nullable()->index();
 
-            $table->string('category', 20)->nullable();
+            // Kategória pontosan ahogy a fájlban van (pl. "B", "A1, A2, A összesítve")
+            $table->string('category', 50)->nullable();
 
             $table->unsignedSmallInteger('year');
             $table->unsignedTinyInteger('quarter');
 
-            // Vizsga Sikerességi Mutató (VSM) — százalék, 2 tizedesig
+            // Vizsga Sikerességi Mutató (VSM) — százalék (a fájlbeli 0..1 tört ×100)
             $table->decimal('vsm_theory', 6, 2)->nullable();
             $table->decimal('vsm_traffic', 6, 2)->nullable();
-
             // Átlagos Képzési Óraszám (ÁKÓ) — százalék
             $table->decimal('ako_practical', 6, 2)->nullable();
+
+            // Nyers érték a fájlból: lehet szám, "X" (nem indult képzés),
+            // "-" (nincs elég vizsga) vagy üres — a weboldal pontos megjelenítéséhez
+            $table->string('vsm_theory_raw', 20)->nullable();
+            $table->string('vsm_traffic_raw', 20)->nullable();
+            $table->string('ako_practical_raw', 20)->nullable();
 
             // Audit: melyik feltöltött fájlból származik az adat
             $table->string('source_file_vsm')->nullable();
@@ -40,7 +48,11 @@ return new class implements Migration
 
             $table->timestamps();
 
-            $table->unique(['school_key', 'category', 'year', 'quarter'], 'school_metrics_unique');
+            // Egyediség a fájlbeli azonosító + kategória + negyedév alapján.
+            // (Két különböző iskolának lehet azonos normalizált neve, de az
+            //  Azonosító egyedi — ezért erre tesszük a unique kulcsot.)
+            $table->unique(['school_ext_id', 'category', 'year', 'quarter'], 'school_metrics_unique');
+            $table->index(['category', 'year', 'quarter']);
         });
     }
 

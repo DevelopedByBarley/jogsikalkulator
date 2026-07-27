@@ -36,15 +36,15 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <p class="text-secondary small mb-3">Add meg e-mail címed és elküldjük a kalkuláció linkjét, ahol a jövőben elérheted.</p>
+                <p class="text-secondary small mb-3">Add meg e-mail címed és elküldjük a kalkulációdat, hogy később is kéznél legyen.</p>
                 <div class="mb-3">
                     <label for="save-calc-email" class="form-label fw-semibold">E-mail:</label>
-                    <input type="email" class="form-control" id="save-calc-email">
+                    <input type="email" class="form-control" id="save-calc-email" autocomplete="email">
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="save-calc-gdpr">
-                    <label class="form-check-label small" for="save-calc-gdpr">
-                        Az <a href="#" class="text-success fw-semibold">adatkezelési nyilatkozatot</a> elfogadom!
+                <div class="mb-3 d-flex align-items-center gap-2">
+                    <input type="checkbox" class="form-check-input mt-0 flex-shrink-0" id="save-calc-gdpr" style="margin-left:0;">
+                    <label class="form-check-label small mb-0" for="save-calc-gdpr">
+                        Az <a href="/public/basic/adatkezelesi_nyilatkozat.pdf" target="_blank" rel="noopener" class="text-success fw-semibold">adatkezelési nyilatkozatot</a> elfogadom!
                     </label>
                 </div>
                 <div class="border rounded p-3 d-flex align-items-center gap-3" style="background:#f9f9f9; width: fit-content;">
@@ -55,10 +55,12 @@
                         reCAPTCHA
                     </div>
                 </div>
+
+                <p id="save-calc-status" class="small mt-3 mb-0 d-none" role="status" aria-live="polite"></p>
             </div>
             <div class="modal-footer border-top">
                 <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">BEZÁR</button>
-                <button type="button" class="btn btn-primary">MENTÉS</button>
+                <button type="button" class="btn btn-primary" id="save-calc-submit" disabled>MENTÉS</button>
             </div>
         </div>
     </div>

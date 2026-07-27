@@ -1,5 +1,15 @@
 DirectoryIndex public/index.php
 
+# A layout csak a main.js URL-jére teszi rá a `?v=` cache-bustert. A modulok
+# egymást verzió nélküli útvonalon importálják, így azokra a böngésző a régi
+# példányt adná vissza egy frissítés után. Ezért a JS/CSS-t mindig
+# újraellenőriztetjük (a nem változott fájl 304-gyel jön vissza, nem tölt újra).
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css)$">
+        Header set Cache-Control "no-cache, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
 

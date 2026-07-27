@@ -17,7 +17,7 @@
     </script>
     <?php
         $cssVersion = max(array_map('filemtime', glob(base_path('resources/css/*.css'))));
-        $cssFiles = ['layout', 'navbar', 'hero', 'calculator-nav', 'toast', 'footer', 'home', 'about'];
+        $cssFiles = ['layout', 'navbar', 'hero', 'calculator-nav', 'toast', 'footer', 'home', 'about', 'compare'];
         foreach ($cssFiles as $file):
             $path = base_path("resources/css/{$file}.css");
             if (file_exists($path)):

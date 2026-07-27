@@ -35,8 +35,12 @@ export function initCalcNav() {
         });
     });
 
+    // Csak a horgony-linkek mutatnak szekcióra. Az összehasonlítás külön
+    // oldalra visz, annak a href-je nem érvényes CSS szelektor.
     const sections = Array.from(navItems)
-        .map(item => document.querySelector(item.getAttribute('href')))
+        .map(item => item.getAttribute('href'))
+        .filter(href => href?.startsWith('#'))
+        .map(href => document.querySelector(href))
         .filter(Boolean);
 
     const observer = new IntersectionObserver(entries => {
